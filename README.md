@@ -72,3 +72,22 @@ As the **site owner**, I want:
     - The value this project will provide, is that it will showcase to future employers my ability to piece together a Full-Stack website, demonstrating proficiency in using HTML, CSS, JavaScript, Python and Django.
     - The value for users of the application is that it will allow them to search for games, add games to their cart and then purchase those games at the checkout.
     - The value for a possible site owner, is that it will allow them to earn money on each game purchased on the site.
+
+#### Strategy Tradeoffs
+
+Opportunity/Problem | Importance (1-5) | Viability/Feasibility (1-5)
+:-------- |:--------:|:--------:|:--------:
+Search Feature | 5 | 4
+Sort / Filter | 5 | 4
+Add / Edit / Delete Games | 5 | 4
+Register | 5 | 5
+Log In / Out | 5 | 5
+User Authentication | 5 | 4
+Secure purchase | 5 | 4
+Purchase confirmation email | 5 | 3
+Contact site owner | 3 | 4
+Recover account details | 5 | 3
+Add / Remove items to / from cart | 5 | 3
+Add / Edit / Delete reviews | 2 | 3
+Update Profile Information | 3 | 5
+View Previous orders | 4 | 4
