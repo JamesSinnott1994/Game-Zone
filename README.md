@@ -5,6 +5,9 @@ The purpose of this project is to build a Business-to-Consumer (B2C) E-commerce 
 ## Table of Contents
 - [User Experience](#user-experience)
     - [Strategy](#strategy)
+        - [User Stories](#user-stories)
+        - [Project Goal](#project-goal)
+        - [Strategy Tradeoffs](#strategy-tradeoffs)
     - [Scope](#scope)
     - [Structure](#structure)
     - [Skeleton](#skeleton)
@@ -52,3 +55,20 @@ As the **site owner**, I want:
 4. To provide a secure payment system for users of the site.
 5. For users to be able to recover their account details.
 6. To be able to access the admin section of the site to view orders made, the items they contain and the delivery information.
+
+#### Project Goal
+
+- Project goal:
+    - The goal of this project is to build a Full-Stack site based around business logic used to control a centrally-owned dataset. An authentication mechanism will be set up and paid access will be provided to the site's data and/or other activities based on the dataset, such as the purchase of a product/service.
+
+- Focus:
+    - The main focus of this project is to create a visually appealing and intuitive Full-Stack online game store called "Game Zone" that will allow users to find and buy games of their choosing.
+
+- Definition:
+    - I am creating an e-commerce website, using HTML, CSS, JavaScript, Python and Django, with MySQL and Postgres used for the relational database.
+    - Stripe payments will be used for purchasing items in the checkout.
+
+- Value:
+    - The value this project will provide, is that it will showcase to future employers my ability to piece together a Full-Stack website, demonstrating proficiency in using HTML, CSS, JavaScript, Python and Django.
+    - The value for users of the application is that it will allow them to search for games, add games to their cart and then purchase those games at the checkout.
+    - The value for a possible site owner, is that it will allow them to earn money on each game purchased on the site.
