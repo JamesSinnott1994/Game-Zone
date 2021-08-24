@@ -1,6 +1,6 @@
 # The Book Club
 
-The purpose of this project is to build a Business-to-Consumer (B2C) E-commerce website for a Gaming Store.
+The purpose of this project is to build a Business-to-Consumer (B2C) E-commerce website for an online Gaming Store called "Game Zone".
 
 ## Table of Contents
 - [User Experience](#user-experience)
@@ -76,7 +76,7 @@ As the **site owner**, I want:
 #### Strategy Tradeoffs
 Opportunity/Problem | Importance  (1-5) | Viability/Feasibility  (1-5)
 :-------- |:--------:|:--------:
-Search Feature | 5 | 4
+Search | 5 | 4
 Sort / Filter | 5 | 4
 Add / Edit / Delete Games | 5 | 4
 Register | 5 | 5
@@ -90,3 +90,25 @@ Add / Remove items to / from cart | 5 | 3
 Add / Edit / Delete reviews | 2 | 3
 Update Profile Information | 3 | 5
 View Previous orders | 4 | 4
+
+
+### Scope
+
+- Main features (For Minimal Viable Product)
+    - Navigation Menu
+    - Pagination for Products page
+    - Search / Sort / Filter functionality
+    - Register
+    - Log In
+    - Log Out
+    - User Authentication
+    - Secure purchase payments
+    - Purchase confirmation email
+    - Add / Remove items to / from cart
+
+- Secondary / Future Features:
+    - Editable User Profile page
+    - Contact page
+    - Recover account details
+    - Add / Edit / Delete reviews
+    - View previous orders
