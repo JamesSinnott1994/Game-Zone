@@ -74,9 +74,8 @@ As the **site owner**, I want:
     - The value for a possible site owner, is that it will allow them to earn money on each game purchased on the site.
 
 #### Strategy Tradeoffs
-
-Opportunity/Problem | Importance (1-5) | Viability/Feasibility (1-5)
-:-------- |:--------:|:--------:|:--------:
+Opportunity/Problem | Importance  (1-5) | Viability/Feasibility  (1-5)
+:-------- |:--------:|:--------:
 Search Feature | 5 | 4
 Sort / Filter | 5 | 4
 Add / Edit / Delete Games | 5 | 4
