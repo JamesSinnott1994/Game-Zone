@@ -112,3 +112,60 @@ View Previous orders | 4 | 4
     - Recover account details
     - Add / Edit / Delete reviews
     - View previous orders
+
+### Structure
+
+1. Home Page
+
+- For the Header:
+    - Top half will contain the site logo on the left, a search bar in the centre, and then a user profile and cart image on the right.
+    - The bottom half of the header in the centre will contain a number of links to different pages i.e. Products, Contact, Login, Registration.
+
+- Below the Header there will be a Hero image with a gaming background. This will contain a welcome and also a link which will bring the user to the Products page.
+
+- Underneath the Hero image there will be a number of different cards for the different Product categories.
+
+- The Footer at the bottom will contain contact information, an About link and Social Media links.
+
+2. Product Page
+
+- Will showcase all the products available in the store.
+- Will have a filtration menu on the right to filter products by category.
+- Will have an input box on top of the products that allows user to sort by price, newest, highest rated etc.
+
+3. Register Page
+
+- Register form for the user.
+
+4. Login Page
+
+- Login form for the user.
+
+5. Cart Page
+
+- For the main area, three quarters of the page will be taken up with a table which displays information about all the products contained in your cart.
+- The last quarter of the page on the right will contain the grand total cost of all the items.
+
+6. Checkout Page
+
+- Will contain a form on the left that allows user to enter their contact details and card payment information.
+- The order summary will be displayed on the right.
+
+7. Contact Page
+
+- Form that allows users to contact the site administrator for any queries.
+
+8. Profile Page
+
+- Will contain a form on the left that allows users to update their profile delivery information/
+- A summary of previous orders will be contained on the right.
+
+9. Product Information Page
+
+- Will contain an enlarged image of the product.
+- Will contain a description and price information about the game.
+- May contain reviews about the game as well.
+
+
+
+
