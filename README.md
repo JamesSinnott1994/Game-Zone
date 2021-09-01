@@ -1,4 +1,4 @@
-# The Book Club
+# Game Zone
 
 The purpose of this project is to build a Business-to-Consumer (B2C) E-commerce website for an online Gaming Store called "Game Zone".
 
@@ -251,3 +251,6 @@ Review Model (Custom model #2)
 | review | TextField | null=True, blank=False |
 | added_by | ForeignKey | User, on_delete=models.CASCADE |
 | rating | IntegerField | default=0, validators=[MinValueValidator(1),MaxValueValidator(5)] |
+
+### Skeleton
+- Wireframes for the project can be found [here](https://github.com/JamesSinnott1994/Game-Zone/blob/master/wireframes/wireframes.pdf)
