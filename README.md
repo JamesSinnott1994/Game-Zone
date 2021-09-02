@@ -166,6 +166,9 @@ View Previous orders | 4 | 4
 - Will contain a description and price information about the game.
 - May contain reviews about the game as well.
 
+### Skeleton
+- Wireframes for the project can be found [here](https://github.com/JamesSinnott1994/Game-Zone/blob/master/wireframes/wireframes.pdf)
+
 ## Database Schema
 
 **Profile App:**
@@ -252,5 +255,25 @@ Review Model (Custom model #2)
 | added_by | ForeignKey | User, on_delete=models.CASCADE |
 | rating | IntegerField | default=0, validators=[MinValueValidator(1),MaxValueValidator(5)] |
 
-### Skeleton
-- Wireframes for the project can be found [here](https://github.com/JamesSinnott1994/Game-Zone/blob/master/wireframes/wireframes.pdf)
+### Surface
+- #### Typography:
+    - Helvetica will be the font that is used for header, titles and links.
+    - Roboto will be the font used for the paragraph text.
+
+- #### Colour scheme:
+    ![Colour Scheme](readme-images/palette.png)
+
+    - For the navbar and footbar, the colour used will be Raisin Blue (Dark Navy Blue)
+    - The Primary background colour will be Indigo Dye (Light Navy Blue)
+    - The Secondary background colour will be Gunmetal (Slighter Dark Navy Blue)
+    - For buttons the colour will be Maya Blue.
+    - For text, the colour will be Beau Blue (Light Grey)
+    - For the "Add to Cart" button the colour will be Green.
+    - For any notifications that should catch the eye i.e. number of items in cart, the orangish colour (Copper Crayola) will be used.
+
+- #### Media:
+    - There will be a Hero Image for the Home page.
+    - There will be many images for the different games on the site.
+
+- #### Effects:
+    - Hover effects over game images, links, buttons and input boxes.
