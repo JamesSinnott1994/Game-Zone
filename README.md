@@ -227,6 +227,12 @@ UserProfile Model
 | default_postcode | CharField | max_length=20, null=True, blank=True |
 | default_country | CountryField | blank_label="Country", null=True, blank=True |
 
+Wishlist Model (Custom model #1)
+
+| Field | Field Type | Field Options |
+| --- | --- | --- |
+| product | ForeignKey | Product, null=False, blank=False, on_delete=models.CASCADE |
+
 **Products App:**
 
 Category Model
@@ -244,13 +250,6 @@ Product Model
 | price | DecimalField | max_digits=6, deciaml_places=2
 | description | TextField | null=True, blank=True |
 | image | ImageField | null=True, blank=True |
-
-Coupon model (Custom model #1)
-
-| Field | Field Type | Field Options |
-| --- | --- | --- |
-| code | CharField | max_length=10, unique=True |
-| amount | IntegerField | validators=[MinValueValidator(1),MaxValueValidator(5)] |
 
 **Checkout App:**
 
