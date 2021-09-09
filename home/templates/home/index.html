@@ -1,3 +1,6 @@
+{% extends "base.html" %}
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +10,8 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Things I need to do:</h1>
+    {% block content %}
+		<h1 class="display-4 text-success">It works!</h1>
+	{% endblock %}
 </body>
 </html>
