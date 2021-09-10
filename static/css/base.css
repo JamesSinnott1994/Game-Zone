@@ -9,7 +9,6 @@ body {
     height: calc(100vh - 164px);
     color: #555;
     font-family: 'Lato';
-    background-color: red;
 }
 
 /* from Bulma */
