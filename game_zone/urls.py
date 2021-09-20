@@ -23,5 +23,6 @@ from home.views import index
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('allauth.urls')),
-    path('', include('home.urls'))
+    path('', include('home.urls')),
+    path('games/', include('games.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
