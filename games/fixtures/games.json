@@ -1,0 +1,626 @@
+[
+    {
+        "pk": 1,
+        "model": "games.game",
+        "fields": {
+            "name": "Rome Total War",
+            "genre": "Strategy",
+            "description": "Rome: Total War is a strategy video game developed by The Creative Assembly and originally published by Activision; its publishing rights have since passed to Sega. \"The game's main campaign takes place from 270 BC to 14 AD showcasing the rise and final centuries of the Republican period and the early decades of the imperial period of Ancient Rome. The player initially assumes control of one of three Roman families; other non-Roman factions can be unlocked later. Gameplay is split between real-time tactical battles and a turn-based strategic campaign. Within the campaign, players manage the economy, government, diplomacy, and military of their faction and attempt to accomplish a series of objectives on a map that encompasses most of Europe, North Africa, and the Near East. On the battlefield, the player controls groups of soldiers and uses them to engage in combat with enemy forces.",
+            "price": 19.99,
+            "category": 1,
+            "rating": 0,
+            "image": "rome-total-war.jpg"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "games.game",
+        "fields": {
+            "name": "Medieval II: Total War",
+            "genre": "Strategy",
+            "description": "Medieval II: Total War is a strategy video game developed by The Creative Assembly and published by Sega. It was released for Microsoft Windows on 10 November 2006. Feral Interactive published versions of the game for MacOS and Linux on 14 January 2016. It is the sequel to 2002's Medieval: Total War and the fourth title in the Total War series.\"Gameplay is divided between a turn-based strategic campaign and real-time tactical battles. The campaign is set between the years 1080 and 1530. Players assume control of a medieval state, referred to in the game as a faction, and control its government, economy, military, diplomacy, and religion on a map spanning most of Europe, North Africa, and the Middle East. In battles, players control groups of soldiers and engage in combat with enemy forces.",
+            "price": 24.99,
+            "category": 1,
+            "rating": 0,
+            "image": "medieval-total-war.jpg"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "games.game",
+        "fields": {
+            "name": "Hearts of Iron II",
+            "genre": "Strategy",
+            "description": "Play as the ruler of one of 175 countries through World Wars II and III. As the Allies and the Soviet Union clash in Europe, the fate of the world hangs in the balance.",
+            "price": 14.99,
+            "category": 1,
+            "rating": 0,
+            "image": "hearts-of-iron-2.jpg"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "games.game",
+        "fields": {
+            "name": "Hearts of Iron III",
+            "genre": "Strategy",
+            "description": "Hearts of Iron III lets you play the most engaging conflict in world history, World War 2, on all fronts as any country and through multiple different scenarios. Guide your nation to glory between 1936 and 1948 and wage war, conduct diplomacy and build your industry in the most detailed World War 2 game ever made.",
+            "price": 9.99,
+            "category": 1,
+            "rating": 0,
+            "image": "hearts-of-iron-3.jpg"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "games.game",
+        "fields": {
+            "name": "Game of Thrones",
+            "genre": "RPG",
+            "description": "Experience an amazing adventure in one of the most fascinating universes! Amidst conspiracy and betrayal, try to survive the orchestrated machinations around the Iron Throne.",
+            "price": 14.99,
+            "category": 1,
+            "rating": 0,
+            "image": "game-of-thrones.jpg"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "games.game",
+        "fields": {
+            "name": "Star Wars - Knights of the Old Republic",
+            "genre": "RPG",
+            "description": "It is four thousand years before the Galactic Empire and hundreds of Jedi Knights have fallen in battle against the ruthless Sith. You are the last hope of the Jedi Order. Can you master the awesome power of the Force on your quest to save the Republic? Or will you fall to the lure of the dark side?",
+            "price": 24.99,
+            "category": 1,
+            "rating": 0,
+            "image": "swkotor.jpg"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "games.game",
+        "fields": {
+            "name": "Star Wars - Knights of the Old Republic II",
+            "genre": "RPG",
+            "description": "5 years after the events of the award winning original, the Sith are on the verge of crushing the Old Republic. As a lone Jedi, will you follow the light side or succumb to the dark?",
+            "price": 9.99,
+            "category": 1,
+            "rating": 0,
+            "image": "swkotor2.jpg"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "games.game",
+        "fields": {
+            "name": "Imperial Glory",
+            "genre": "Strategy",
+            "description": "It is a time of war in Europe. Driven by new ideas of Enlightenment, the hearts of men and women across the continent are inflamed with dreams of freedom and glory. This is the moment for a military genius to forge himself a name to be remembered throughout all eternity. This is your moment.",
+            "price": 4.99,
+            "category": 1,
+            "rating": 0,
+            "image": "imperial-glory.jpg"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "games.game",
+        "fields": {
+            "name": "Fallout 4",
+            "genre": "RPG",
+            "description": "Bethesda Game Studios, the award-winning creators of Fallout 3 and The Elder Scrolls V: Skyrim, welcome you to the world of Fallout 4 – their most ambitious game ever, and the next generation of open-world gaming.",
+            "price": 19.99,
+            "category": 1,
+            "rating": 0,
+            "image": "fallout-4.jpg"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "games.game",
+        "fields": {
+            "name": "Deus Ex",
+            "genre": "Cyberpunk",
+            "description": "The year is 2052 and the world is a dangerous and chaotic place. Terrorists operate openly - killing thousands; drugs, disease and pollution kill even more. The world's economies are close to collapse and the gap between the insanely wealthy and the desperately poor grows ever wider.",
+            "price": 6.99,
+            "category": 1,
+            "rating": 0,
+            "image": "deus-ex.jpg"
+        }
+    },
+    {
+        "pk": 11,
+        "model": "games.game",
+        "fields": {
+            "name": "Age of Empires 2",
+            "genre": "RTS",
+            "description": "Age of Empires II: The Age of Kings is a real-time strategy video game developed by Ensemble Studios and published by Microsoft. Released in 1999 for Microsoft Windows and Macintosh, it is the second game in the Age of Empires series. The Age of Kings is set in the Middle Ages and contains thirteen playable civilizations. Players aim to gather resources, which they use to build towns, create armies, and defeat their enemies. There are five historically based campaigns, which constrict the player to specialized and story-backed conditions, as well as three additional single-player game modes; multiplayer is also supported.",
+            "price": 9.99,
+            "category": 1,
+            "rating": 0,
+            "image": "aoe-2.jpg"
+        }
+    },
+    {
+        "pk": 12,
+        "model": "games.game",
+        "fields": {
+            "name": "Age of Mythology",
+            "genre": "RTS",
+            "description": "The classic real time strategy game that transports players to a time when heroes did battle with monsters of legend and the gods intervened in the affairs of mortals. Use mythological creatures like Minotaurs and Cyclopes to bolster your armies' strength. Call upon the gods for assistance in flattening enemy towns with meteors or scatter opposing troops with lightning storms.",
+            "price": 4.99,
+            "category": 1,
+            "rating": 0,
+            "image": "age-of-mythology.jpg"
+        }
+    },
+    {
+        "pk": 13,
+        "model": "games.game",
+        "fields": {
+            "name": "Call of Duty: Black Ops Cold War",
+            "genre": "Action",
+            "description": "Black Ops Cold War drops fans into the depths of the Cold War’s volatile geopolitical battle of the early 1980s.",
+            "price": 48,
+            "category": 2,
+            "rating": 0,
+            "image": "cod-bo-cold-war.jpg"
+        }
+    },
+    {
+        "pk": 14,
+        "model": "games.game",
+        "fields": {
+            "name": "Resident Evil: Village",
+            "genre": "First-Person Survival",
+            "description": "Players will assume the role of Ethan Winters and experience every up-close battle and terrifying pursuit through a first-person perspective.",
+            "price": 60,
+            "category": 2,
+            "rating": 0,
+            "image": "resident-evil-village.jpg"
+        }
+    },
+    {
+        "pk": 15,
+        "model": "games.game",
+        "fields": {
+            "name": "Demon's Souls",
+            "genre": "RPG",
+            "description": "From PlayStation Studios and Bluepoint Games comes a remake of the PlayStation classic, Demon's Souls. Entirely rebuilt from the ground up and masterfully enhanced, this remake introduces the horrors of a fog-laden, dark fantasy land to a whole new generation of gamers. Those who've faced its trials and tribulations before, can once again challenge the darkness in stunning visual quality with incredible performance.\" In his quest for power, the 12th King of Boletaria, King Allant channelled the ancient Soul Arts, awakening a demon from the dawn of time itself, The Old One. With the summoning of The Old One, a colourless fog swept across the land, unleashing nightmarish creatures that hungered for human souls. Those whose souls were stripped from them, lost their minds - left only with the desire to attack the sane that remained.\" Now, Boletaria is cut off from the outside world, and the knights who dare penetrate the deep fog to free the land from its plight, are never seen again. As a lone warrior who has braved the baneful fog, you must face the hardest of challenges to earn the title 'Slayer of Demons' and send The Old One back to its slumber.",
+            "price": 60,
+            "category": 2,
+            "rating": 0,
+            "image": "demons-souls.jpg"
+        }
+    },
+    {
+        "pk": 16,
+        "model": "games.game",
+        "fields": {
+            "name": "Watch Dogs Legion",
+            "genre": "RPG",
+            "description": "Build a resistance from virtually anyone you see as you hack, infiltrate, and fight to take back a near-future London that is facing its downfall.",
+            "price": 30,
+            "category": 2,
+            "rating": 0,
+            "image": "watch-dogs-legion.jpg"
+        }
+    },
+    {
+        "pk": 17,
+        "model": "games.game",
+        "fields": {
+            "name": "Hitman III",
+            "genre": "Action",
+            "description": "Agent 47 returns as a ruthless professional in HITMAN 3 for the most important contracts of his entire career. Embark on an intimate journey of darkness and hope in the dramatic conclusion to the World of Assassination trilogy. Death awaits.",
+            "price": 52,
+            "category": 2,
+            "rating": 0,
+            "image": "hitman-iii.jpg"
+        }
+    },
+    {
+        "pk": 18,
+        "model": "games.game",
+        "fields": {
+            "name": "FIFA 21",
+            "genre": "Sport",
+            "description": "Feel Next Level in FIFA 21 with new features that take The World’s Game from visual to visceral. On the pitch and in the stands, next level technology unlocked by the power of the generation of consoles enables you to play, see, and move next level in ultra-realistic stadiums that immerse you in the most true-to-life matchday experience in EA SPORTS FIFA history.",
+            "price": 25,
+            "category": 2,
+            "rating": 0,
+            "image": "fifa-21.jpg"
+        }
+    },
+    {
+        "pk": 19,
+        "model": "games.game",
+        "fields": {
+            "name": "Sackboy: A Big Adventure",
+            "genre": "Adventure",
+            "description": "Take Sackboy on an epic 3D platforming adventure with your friends.",
+            "price": 48,
+            "category": 2,
+            "rating": 0,
+            "image": "sackboy.jpg"
+        }
+    },
+    {
+        "pk": 20,
+        "model": "games.game",
+        "fields": {
+            "name": "Immortals: Fenyx Rising",
+            "genre": "Fantsay",
+            "description": "Immortals Fenyx Rising brings grand mythological adventure to life. Play as Fenyx, a winged demigod on a quest to save the Greek gods and their home from a dark curse. Take on mythological beasts, master the legendary powers of the gods and defeat Typhon, the deadliest Titan in Greek mythology, in an epic fight for the ages. The fate of the world is at stake you are the gods’ last hope.",
+            "price": 22,
+            "category": 2,
+            "rating": 0,
+            "image": "immortals.jpg"
+        }
+    },
+    {
+        "pk": 21,
+        "model": "games.game",
+        "fields": {
+            "name": "Godfall",
+            "genre": "RPG",
+            "description": "Godfall is a next-gen looter-slasher, set in a bright fantasy universe filled with heroic knights and arcane magic. Embark on adventure in a fantasy action RPG that utilizes high-impact third-person melee combat to engage players as they hunt for loot, don legendary armor sets and defeat vicious enemies. Face challenging missions that reward you with head-turning loot as you vanquish the armies that stand against you.",
+            "price": 32,
+            "category": 2,
+            "rating": 0,
+            "image": "godfall.jpg"
+        }
+    },
+    {
+        "pk": 22,
+        "model": "games.game",
+        "fields": {
+            "name": "Outriders",
+            "genre": "RPG",
+            "description": "Outriders is a 1-3 player co-op RPG shooter set in an original, dark and desperate sci-fi universe. As mankind bleeds out in the trenches of enoch, you'll create your own outrider and embark on a journey across the hostile planet. With rich storytelling spanning a diverse world, you'll leave behind the slums and shanty towns of the first city and traverse forests, mountains and desert in the pursuit of a mysterious signal. Combining intense gunplay with violent powers and an arsenal of increasingly twisted weaponry and gear-sets, outriders offers countless hours of gameplay from one of the finest shooter developers in the industry - people can fly.",
+            "price": 35,
+            "category": 2,
+            "rating": 0,
+            "image": "outriders.jpg"
+        }
+    },
+    {
+        "pk": 23,
+        "model": "games.game",
+        "fields": {
+            "name": "Terminator: Resistance Enhanced",
+            "genre": "First-Person Shooter",
+            "description": "Experience the events leading up to the decisive, final battle for the fate of mankind in the war against the machines. Terminator: Resistance is a first-person shooter, set during the 'Future War' scenario that was only glimpsed at in the iconic films, 'The Terminator' and 'T2: Judgment Day'.",
+            "price": 32,
+            "category": 2,
+            "rating": 0,
+            "image": "terminator.jpg"
+        }
+    },
+    {
+        "pk": 24,
+        "model": "games.game",
+        "fields": {
+            "name": "Oddworld: Soulstorm",
+            "genre": "Adventure",
+            "description": "Taking up where New 'N' Tasty ended, embark on the second chapter of Abe's heroic journey. Set directly after the events of 2014's Oddworld: New 'N' Tasty, Oddworld: Soulstorm is the second game in Abe's heroic new epic. Abe has now undergone a transformation - from a clueless Mudokon cog about to be chewed up by the Glukkons' mega-corporate machines into an unlikely hero who rises to become a beacon of hope.",
+            "price": 48,
+            "category": 2,
+            "rating": 0,
+            "image": "oddworld.jpg"
+        }
+    },
+    {
+        "pk": 25,
+        "model": "games.game",
+        "fields": {
+            "name": "Red Dead Redemption 2",
+            "genre": "RPG",
+            "description": "Developed by the creators of Grand Theft Auto V and Red Dead Redemption, Red Dead Redemption 2 is an epic tale of life in America's unforgiving heartland. The game's vast and atmospheric world will also provide the foundation for a brand new online multiplayer experience.",
+            "price": 28,
+            "category": 3,
+            "rating": 0,
+            "image": "red-dead-redemption.jpg"
+        }
+    },
+    {
+        "pk": 26,
+        "model": "games.game",
+        "fields": {
+            "name": "Spider-Man (2018)",
+            "genre": "Adventure",
+            "description": "When a villain threatens New York City, Peter Parker and Spider-Man's worlds collide. To save the city and those he loves, he must rise up and be greater.",
+            "price": 30,
+            "category": 3,
+            "rating": 0,
+            "image": "spiderman.jpg"
+        }
+    },
+    {
+        "pk": 27,
+        "model": "games.game",
+        "fields": {
+            "name": "Grand Theft Auto V",
+            "genre": "Adventure",
+            "description": "One of the biggest events of the last console generation is finally striding onto more powerful formats! GTA V finally makes its next-gen debut. With GTA IV having taken place in a decidedly east coast sort of setting in Liberty City, this game takes things over to the west coast. The action takes place in Los Santos and the surrounding countryside of San Andreas. Los Santos has seen better days. A sprawling metropolis full of faded stars, self-help gurus and desperate celebrities, the city has declined somewhat in the face economic uncertainty and cheap reality TV. In need of a big score are Franklin, a former street-level gangster; Michael, an ex-con living the high life in witness protection and Trevor, who's a bit on the sociopathic side. These are the three characters through whose eyes you'll see Los Santos. Of course, you'll do a lot more than looking around. The game is centred around six big heists, with plenty of driving, shoot-outs and other assorted missions to get stuck into in between. The open world map is huge, with hours upon hours of content on offer. If you should happen to get through it all, however, there's a whole other side to the game. GTA V also gets you access to GTA Online, a sprawling persistent world for you and up to 15 other players to play in either cooperatively or against each other in traditional competitive modes. With the next-gen version, players get the advantage of higher levels of detail than have ever been seen in GTA before, with better draw distances, finer texture detail and denser traffic to make the city seem more vibrant than ever.",
+            "price": 35,
+            "category": 3,
+            "rating": 0,
+            "image": "gta5.jpg"
+        }
+    },
+    {
+        "pk": 28,
+        "model": "games.game",
+        "fields": {
+            "name": "FIFA 20",
+            "genre": "Sport",
+            "description": "As the 2019/2020 season kicks into high gear, EA's FIFA series is back with a host of improvements and one big new twist on its classic formula. With FIFA 20 EA Sports is taking the beautiful game back to the streets for a more casual, creative version of the sports know and love. Pitches are swapped out for courts and cages, sponsored kits are swapped out for casual-wear and tight formations and tactics are swapped out for a more dramatic style of play that's fast and fancy. Configurations include 3v3, 4v4, and 5v5 modes, as well as rush, where there's no keeper. Less obvious but no less important are changes that have been made under the hood. EA has been playing around with the pillars of how matches move and flow, crafting what it calls Football Intelligence around 'decisive moments' (play on the ball); 'authentic game flow' (off the ball) and ball physics (which sort of explains itself). As ever, fidelity to real world elements of the game is a big part of FIFA. The UEFA Champions League; UEFA Europa League and UEFA Super Cup are all present, accounted for and fully licensed, complete with official broadcast overlays, kit badges, match balls and trophies. Returning fans will also be glad of returning modes including FIFA 20 Ultimate Team, Career Mode, a standalone Champions League Mode. Basically, EA Sports FIFA 20 is the full package!",
+            "price": 15,
+            "category": 3,
+            "rating": 0,
+            "image": "fifa-20.jpg"
+        }
+    },
+    {
+        "pk": 29,
+        "model": "games.game",
+        "fields": {
+            "name": "Call of Duty: WWII",
+            "genre": "First-Person Shooter",
+            "description": "After jaunts to every-when from the 1970s to the far-flung future, the Call of Duty series is returning to its roots with Call of Duty: WWII. Once again players will take to the battlegrounds of Europe in a bid to oust the evil of National Socialism from the world, but this time out they'll be doing it on the hardware of 2017 and with the benefit of lessons learned from multiple series installments. Activision and Sledgehammer Games are aiming squarely at the goal of delivering a gritty, cinematic World War II experience. You'll storm the beaches on D-Day, march across France to liberate Paris and ultimately push on for the invasion of Germany. There's even, in multiplayer, a map that offers players a chance to fight in Blitz-torn London. While the series is clearly going back to its roots in one sense, Sledgehammer has clearly learned from the games between the last CoD set in WWII and now. Most obvious is the inclusion of all the usual killstreaks, but CoD aficionados will also note the likes of turret gunning from Modern Warfare 2; maps with a hint of Black Ops 3 and Infinite Warfare's momentum-driven layouts to them and paratroopers who call back to World at War's attack dogs. There are certainly new additions too, however. War mode is a new narrative-driven multiplayer mode that has Allied and Axis forces clash in team-driven assault and defend missions. Headquarters, meanwhile, is a new social and competitive experience for players, with activities like 1v1 fights, anti-aircraft gunnery and eSports viewing available. Call of Duty: WWII also introduces Nazi Zombies, an all-new co-op experience with its own storyline set against the backdrop of World War II.",
+            "price": 18,
+            "category": 3,
+            "rating": 0,
+            "image": "cod-wwii.jpg"
+        }
+    },
+    {
+        "pk": 30,
+        "model": "games.game",
+        "fields": {
+            "name": "FIFA 18",
+            "genre": "Sport",
+            "description": "As the football season kicks into high gear another entry into the world's biggest footy videogame lands on our screens, complete with a host of improvements and updates. One significant change is to dribbling. There's a whole load of technology and jargon you might hear about, but what it boils down to is this - improvements brought about using the Frostbite Engine and what EA's calling 'Real Player Motion Technology' mean that dribbling is more fluid than ever. Players naturally twist, tap and squirm as your thumb does the same on the analog stick, far more quickly than in previous games. The Journey makes a comeback, with this outing getting the dramatic moniker 'Hunter's Return'. It continues the career mode from the last game, with save data transfers meaning you can pick up right where you left off as you guide Hunter through his next season with your chosen club. This time out, however, Hunter's no longer a green newcomer and will have to contend with a host of new challenges. The inclusion of Cristiano Ronaldo as a voiced character is rather tantalising, too... Live Substitutions don't sound like they ought to be a big change, but for fans of playing online they'll represent a big shift. Because no-one likes to be the one to press pause when they're playing against their friends, subs tend to be foregone and over the course of the game the game slows as players get sluggish. With the unobtrusive pop-up of a small graphic, however, you'll now be offered the opportunity to swap out a flagging player for an AI-chosed alternative or a pre-set choice you made before kick-off. A couple of big changes have been made to the look of the game that are sure to make an impact to the overall feel, too. While in the past attention has been made to getting the look of different stadia right, this time EA has paid a lot of attention to the feel of them. The light changes as you move from, say, an English ground to a South American one, while the crowds will react differently too. Another big push on the visual front comes in the form of faces, with EA aiming to deepen the authenticity with more realistic modelling than ever. 2017/18 is promising to be a big season for FIFA.",
+            "price": 3,
+            "category": 3,
+            "rating": 0,
+            "image": "fifa-18.jpg"
+        }
+    },
+    {
+        "pk": 31,
+        "model": "games.game",
+        "fields": {
+            "name": "Last Of Us Part II",
+            "genre": "Adventure",
+            "description": "Five years after their dangerous journey across the post-pandemic United States, Ellie and Joel have settled down in Jackson, Wyoming. Living amongst a thriving community of survivors has allowed them peace and stability, despite the constant threat of the infected and other, more desperate survivors.\" When a violent event disrupts that peace, Ellie embarks on a relentless journey to carry out justice and find closure. As she hunts those responsible one by one, she is confronted with the devastating physical and emotional repercussions of her actions.",
+            "price": 35,
+            "category": 3,
+            "rating": 0,
+            "image": "last-of-us.jpg"
+        }
+    },
+    {
+        "pk": 32,
+        "model": "games.game",
+        "fields": {
+            "name": "Assassin's Creed Valhalla",
+            "genre": "RPG",
+            "description": "Become Eivor, a legendary Viking warrior raised on tales of battle and glory. Raid your enemies, grow your settlement, and build your political power in the quest to earn a place among the gods in Valhalla.",
+            "price": 48,
+            "category": 3,
+            "rating": 0,
+            "image": "ac-valhalla.jpg"
+        }
+    },
+    {
+        "pk": 33,
+        "model": "games.game",
+        "fields": {
+            "name": "Assassin's Creed Origins",
+            "genre": "RPG",
+            "description": "The critically-acclaimed Assassin’s Creed franchise returns with new stories and quests, an exciting new world to explore and a completely redesigned combat system.",
+            "price": 20,
+            "category": 3,
+            "rating": 0,
+            "image": "ac-origins.jpg"
+        }
+    },
+    {
+        "pk": 34,
+        "model": "games.game",
+        "fields": {
+            "name": "Assassin's Creed Odyssey",
+            "genre": "RPG",
+            "description": "Write your own epic odyssey and become a legendary Spartan hero. Forge your destiny in a world on the brink of tearing itself apart. Influence how history unfolds in an ever-changing world shaped by your choices. Take control of your destiny with every decision you make and each relationship you build. Customize your equipment and master special abilities, tailoring your hero's skillset to your playstyle. Fight across the country of Greece, engaging in visceral battles on both land and sea and becoming a true hero of legend.",
+            "price": 25,
+            "category": 3,
+            "rating": 0,
+            "image": "ac-odyssey.jpg"
+        }
+    },
+    {
+        "pk": 35,
+        "model": "games.game",
+        "fields": {
+            "name": "Battlefield 1",
+            "genre": "First-Person Shooter",
+            "description": "Only in Battlefield 1 will you bring a horse to a tank fight and squad-up with your allies in epic multiplayer battles with up to 64 players. Through ever-changing environments at the dawn of all-out war, no battle is ever the same. Battlefield 1 takes you across multiple and varied locations in a bid to fight your way through immersive battles. From tight urban fights in a besieged French city, to big open spaces in the Italian Alps and frantic combats in the deserts of Arabia, discover a world at war through an adventure-filled campaign. In a true multiplayer sandbox experience, take to the skies and engage in high-octane dogfights through treacherous landscapes, or have a battleship obliterating the coast from the sea, and engage in some of the biggest battles ever seen as empires clash for supremacy. Set against the backdrop of World War 1, witness the birth of modern warfare, as the Great War saw a furious arms race with new machines and weapons created to get the upper hand during the most technologically divergent war of all time. Feel the intensity and immersion as Battlefield 1 takes advantage of this modern arsenal to deliver the experience fans love, but with a fresh and modern twist.",
+            "price": 6,
+            "category": 3,
+            "rating": 0,
+            "image": "battlefield-1.jpg"
+        }
+    },
+    {
+        "pk": 36,
+        "model": "games.game",
+        "fields": {
+            "name": "Call of Duty: Infinite Warfare",
+            "genre": "First-Person Shooter",
+            "description": "Activision and its developers have been inching towards science fiction with the Call of Duty franchise for years now, but with Infinite Warfare they've finally taken the plunge. In the campaign mode you play as Captain Reyes, a Tier 1 Special Operations pilot at the helm of the Retribution, one of Earth's last remaining warships, in a conflict not just for our planet, but for the whole solar system. See, in Infinite Warfare's future the Earth's resources are spent and our world relies on colonies spread across the solar system to provide it with resources. Not all the colonies are happy with this set-up, though, and the fascist SetDef, hardened by years in extreme environments, seeks to control these outposts and put a stranglehold on the countries of Earth. It's into this conflict that you step. As is befitting this interplanetary set-up, the action takes place across a wide array of environments that bring their own twists on gameplay. In particular, Infinity Ward has included zero-g combat, in which players can move around using a grappling hook and attempt to outflank their enemies. One example is a rapidly-spinning, airless asteroid that's repeatedly baked in searing sunlight. It doesn't get much more tense than that... Another big addition is the Jackal, a futuristic fighter jet that players can take control of. This backdrop will bring brand new challenges to the game's multiplayer, with maps that are designed to leverage tweaks to Call of Duty's movement system for faster, more frenetic play than ever. All this sci-fi action means we get an interesting twist on zombies mode. Zombies in Spaceland takes players back in time to a 1980s amusement park with its After Life Arcade, Fate & Fortune Cards and brand new team mechanics. The Legacy Edition comes with a huge extra treat, too. Modern Warfare Remastered is packed in there, bringing the Call of Duty classic to current generation consoles with a graphical overhaul, iconic campaign and 10 fan favourite multiplayer maps!",
+            "price": 12,
+            "category": 3,
+            "rating": 0,
+            "image": "cod-infinite-warfare.jpg"
+        }
+    },
+    {
+        "pk": 37,
+        "model": "games.game",
+        "fields": {
+            "name": "Minecraft",
+            "genre": "Sandbox",
+            "description": "Experience the Minecraft gaming phenomenon, rebuilt with new features designed for Xbox 360. Create worlds limited only by your imagination. Explore, build, and conquer alone or with your friends via split-screen mode or over Xbox LIVE.",
+            "price": 25,
+            "category": 4,
+            "rating": 0,
+            "image": "sandbox.jpg"
+        }
+    },
+    {
+        "pk": 38,
+        "model": "games.game",
+        "fields": {
+            "name": "Halo 5: Guardians",
+            "genre": "Action",
+            "description": "A mysterious and unstoppable force threatens the galaxy, the Master Chief is missing and his loyalty questioned. Experience the most dramatic Halo story to date in a 4-player cooperative epic that spans three worlds. Challenge friends and rivals in new multiplayer modes: Warzone, massive 24-player battles, and Arena, pure 4-vs-4 competitive combat.",
+            "price": 4,
+            "category": 4,
+            "rating": 0,
+            "image": "halo-5.jpg"
+        }
+    },
+    {
+        "pk": 39,
+        "model": "games.game",
+        "fields": {
+            "name": "Kinect Rush: A Disney Pixar Adventure",
+            "genre": "Adventure",
+            "description": "Use KinectScan to become a unique character and help your Pixar friends in five vibrant Pixar worlds. Become a super spy in Cars, save the day as a robot in Toy Story, adventure through Paris as a clever rat in Ratatouille, stop Syndrome as a super hero in Incredibles, and help Karl as an intrepid Wilderness Explorer in UP.",
+            "price": 1,
+            "category": 4,
+            "rating": 0,
+            "image": "kinect-rush.jpg"
+        }
+    },
+    {
+        "pk": 40,
+        "model": "games.game",
+        "fields": {
+            "name": "Call of Duty: Modern Warfare (2019)",
+            "genre": "First-Person Shooter",
+            "description": "The stakes have never been higher as players take on the role of lethal Tier One operators in a heart-racing saga that will affect the global balance of power. Call of Duty: Modern Warfare engulfs fans in an incredibly raw, gritty, provocative narrative that brings unrivaled intensity and shines a light on the changing nature of modern war. Developed by the studio that started it all, Infinity Ward delivers an epic reimagining of the iconic Modern Warfare series from the ground up.",
+            "price": 5,
+            "category": 4,
+            "rating": 0,
+            "image": "cod-modern-warfare.jpg"
+        }
+    },
+    {
+        "pk": 41,
+        "model": "games.game",
+        "fields": {
+            "name": "Gears Of War 4",
+            "genre": "Action",
+            "description": "A new saga begins for one of the most acclaimed video game franchises in history. After narrowly escaping an attack on their village, JD Fenix and his friends, Kait and Del, must rescue the ones they love and discover the source of a monstrous new enemy. Features: Never Fight Alone: Enjoy two-player co-op with friends locally via split-screen, over Xbox Live or LAN. Player 2 can select either Kait or Del Redefined Cover Gameplay: New close-cover combat moves and combat-knife executions turn each piece of cover into an offensive opportunity Brutal New Weapons: An incredible arsenal of new weapons includes the Buzzkill and Dropshot, which can shoot around and over cover, raining destruction from all angles Explosive Versus Multiplayer: Compete online in new and favorite game types, all at 60fps on dedicated servers. A new visible ranking system means fairer matchmaking for social, competitive and professional players alike",
+            "price": 8,
+            "category": 4,
+            "rating": 0,
+            "image": "gears-of-war-4.jpg"
+        }
+    },
+    {
+        "pk": 42,
+        "model": "games.game",
+        "fields": {
+            "name": "Star Wars Battlefront",
+            "genre": "Action",
+            "description": "Feeling the ominous thud of an AT-AT stomping down on the frozen tundra of Hoth. Rebel forces firing blasters as Imperial speeder bikes zip through the lush forests of Endor. Intense dogfights between squadrons of X-wings and TIE fighters filling the skies. Immerse yourself in the epic Star WarsTM battles you've always dreamed of and create new heroic moments of your own in Star WarsT BattlefrontT. Fight for the Rebellion or Empire in a wide variety of multiplayer matches for up to 40 players, or in exciting challenges inspired by the films available solo, split-screen or through online co-op. Star Wars Battlefront combines this epic action on a galactic scale with stunning visual recreations of some of the most iconic planets, weapons, characters, and vehicles in the Star Wars universe and the original sound effects from the films, to give Star Wars fans the ultimate, authentic and immersive interactive experience they've been looking for. KEY FEATURES - The Most Immersive and Photorealistic Interactive Entertainment Experience Visit classic planets from the original Star WarsT trilogy, detailed with an unprecedented amount of realism and sense of authenticity that will transport you to a galaxy far, far away - Experience amazing digital replicas of the original Star Wars movie models, brought to lifelike fidelity by DICE's use of photogrammetry technology - Ground-based Combat on a Galactic Scale Engage in epic battles on iconic planets including Hoth, Endor, and Tatooine. Also, bring the fight to the previously unexplored planet, Sullust - Pilot a diverse set of ground-based vehicles including nimble speeder bikes, massive AT-ATs, and more - Master the Battlefront with Iconic Star Wars Characters Play as some of the most memorable characters in the Star Wars universe including Darth Vader and Boba Fett - Encounter a variety of beloved characters from the original trilogy such as C-3PO and R2-D2 - Take to the Skies in Epic Star Wars Dog Fights Pilot the Millennium Falcon, X-wings, TIE fighters, and more of your favorite vehicles in exhilarating aerial combat - Made for Jedi and Padawans Alike Battle alongside your friends online or in offline split-screen Co-op mode - Seamlessly swap between 1st person and 3rd person views",
+            "price": 6,
+            "category": 4,
+            "rating": 0,
+            "image": "sw-battlefront.jpg"
+        }
+    },
+    {
+        "pk": 43,
+        "model": "games.game",
+        "fields": {
+            "name": "Overwatch",
+            "genre": "Adventure",
+            "description": "Join the ranks of a legendary force of soldiers, scientists, adventurers, and oddities known as Overwatch. Choose your hero and clash on the battlefields of tomorrow. Bend time, defy physics, and wield extraordinary powers in the ultimate team-based shooter. The fight for the future has begun. Take your place in Overwatch.",
+            "price": 18,
+            "category": 4,
+            "rating": 0,
+            "image": "overwatch.jpg"
+        }
+    },
+    {
+        "pk": 44,
+        "model": "games.game",
+        "fields": {
+            "name": "Star Wars Jedi: Fallen Order",
+            "genre": "Action",
+            "description": "A galaxy-spanning adventure awaits in Star Wars Jedi: Fallen Order, a new 3'rd person action-adventure title from Respawn Entertainment. This narratively-driven single player game puts you in the role of a Jedi Padawan who narrowly escaped the purge of Order 66 following the events of Episode 3 - Revenge of the Sith. On a quest to rebuild the Jedi Order, you must pick up the pieces of your shattered past to complete your training, develop new powerful Force abilities, and master the art of the iconic lightsaber - all while staying one step ahead of the Empire and its deadly Inquisitors.",
+            "price": 20,
+            "category": 4,
+            "rating": 0,
+            "image": "sw-jedi-fallen-order.jpg"
+        }
+    },
+    {
+        "pk": 45,
+        "model": "games.game",
+        "fields": {
+            "name": "Elder Scrolls V: Skyrim Special Edition",
+            "genre": "RPG",
+            "description": "Set two hundred years after the events of Oblivion, The Elder Scrolls V: Skyrim takes role-playing to a whole new level. The land of Skyrim has tumbled headlong into civil war after the assassination of the King. Add in the rising god-dragon Alduin who is hell-bent on destroying the world and things are looking bad. The only possible saviour? You. Developer Bethesda made the world larger than ever, incorporating a bigger story, more quests and more characters than any previous Elder Scrolls game. With this Special Edition the game is bigger than ever, with not only all the game's DLC, but also the power of a host of content from the PC modding scene. Beginning (as always) as a prisoner on your way to your execution, players will be encouraged to travel through the world of Tamriel, developing their character however they see fit to save the world. While Skyrim may well be set firmly in the usual tropes you would expect from a fantasy game, the level of depth in the game is unparalleled, allowing you to experience the game how you want to. After five years of development, you would expect Bethesda to have poured a huge amount of work into Skyrim. With stunning graphics and audio (with voices from over 70 actors including three Oscar nominees) this is one of the deepest, most involved games of all time. A truly fitting addition to the Elder Scrolls series.",
+            "price": 20,
+            "category": 4,
+            "rating": 0,
+            "image": "skyrim.jpg"
+        }
+    },
+    {
+        "pk": 46,
+        "model": "games.game",
+        "fields": {
+            "name": "Ghost Recon: Wildlands",
+            "genre": "First-Person Shooter",
+            "description": "Bolivia, a few years from now: this beautiful South American country has become the largest cocaine producer in the world. The influential and vicious Santa Blanca drug cartel has turned the country into a narco-state, leading to lawlessness, fear, injustice, and violence. The cartel is on track to becoming a major underworld power and global threat. An all-out war is not the answer. A surgical, stealthy, lethal approach is the only way to stop the disease at its source. The Ghosts, an elite US Special Forces team, are sent behind enemy lines to wreak havoc, destabilize, and eventually break the alliance between the cartel and the corrupted government. Facing an almighty enemy in a massive and hostile environment, the Ghosts will need to make critical moral choices and engage in tough battles to complete their mission - their grittiest and most dangerous operation to date. Features Tom Clancy's Ghost Recon Wildlands is a military shooter set in a massive, dangerous, and responsive open world that you can play entirely solo or in four-player co-op. BIENVENIDOS A BOLIVIA From the infamous Death Road to the world's largest salt flat and lush jungles, journey through Ubisoft's largest open world action-adventure game to date. Discover massive regions inspired by Bolivia and South America, and enjoy their stunning vistas and incredible diversity. Explore the hundreds of villages, landmarks, and legends populating this country and immerse yourself in Bolivian culture. Cross paths with inhabitants reacting to their own agendas and to the game's day-night cycle and weather system. Explore the wildlands on or off road, in the air, and at sea with over 60 different vehicles, including armored pickups, supercars, dirt bikes, helicopters, and RIB boats just to name a few. BECOME A GHOST Lead a team of four Ghosts, the absolute best of the US military. Play either solo or with up to three of your friends online in this gritty adventure as they seamlessly join you at any point in the game. Engage all your missions in whatever order and manner suits you: stealth, distraction, and tactical or frontal assault always remain possible. Use the new iconic drones to recon the toughest terrains and to tag enemy outposts, or transform them into destructive weapons. Make difficult but critical choices: sabotage, interrogation, kidnapping, and assassination are but a few of the options available for you to reach your objectives. Create your very own ghost thanks to multiple customization options and upgrade your character with the experience and loot you gather on the battleground. TAKEDOWN THE SANTA BLANCA CARTEL The Santa Blanca cartel and its infamous leader, El Sueño, are the most powerful, treacherous, and imposing foes the Ghosts have ever faced. Your mission is to take the cartel down and put an end to their rule of terror by any means necessary: destroy their production facilities, cut off their trafficking routes, dismantle their influence network and bring Santa Blanca's sicarios down to their knees. The world will react differently to each of your choices: unexpected opportunities and threats could arise from any situation.",
+            "price": 20,
+            "category": 4,
+            "rating": 0,
+            "image": "ghost-recon.jpg"
+        }
+    },
+    {
+        "pk": 47,
+        "model": "games.game",
+        "fields": {
+            "name": "Mafia: Definitive Edition",
+            "genre": "Action",
+            "description": "Part one of the Mafia crime saga - 1930s, Lost Heaven, IL Re-made from the ground up, rise through the ranks of the Mafia during the Prohibition era of organized crime. After a run-in with the mob, cab driver Tommy Angelo is thrust into a deadly underworld. Initially uneasy about falling in with the Salieri crime family, Tommy soon finds that the rewards are too big to ignore.",
+            "price": 25,
+            "category": 4,
+            "rating": 0,
+            "image": "mafia.jpg"
+        }
+    },
+    {
+        "pk": 48,
+        "model": "games.game",
+        "fields": {
+            "name": "Metro Exodus",
+            "genre": "Action",
+            "description": "That giant pile of corpses ahead of you is twitching. You know that's bad news, right? In Metro Exodus pretty much everything that happens is bad news, but a twitching pile of corpses is news of the notably negative type. And, yes, there's a giant mutant mole hungry to eat your face. Shoot it! SHOOT IT!!! Such is a minute in the life of Metro Exodus hero Artyom, surviving in an irradiated Russia 25 years after the world's nations got a bit too trigger-happy with their nukes. Shooting, exploring, and surviving in the face of the ever-growing horror of this harrowingly beautiful world. One bit of good news for Artyom this time out, though, is he's out of the tunnels! This opens up the world of Metro from the claustrophobic underground warrens of previous games to terrifying wetlands, deserts and ruins. There are sprawling stages for you to explore now, with chances to tackle their various slavers, bandits and giant shrimp monsters in whatever way you see fit. It's a world that oozes atmosphere and the stench of death in equal measures. Make sure you keep your wits about you and your gun loaded, or you'll most certainly find yourself in the belly of something with no right to exist.",
+            "price": 10,
+            "category": 4,
+            "rating": 0,
+            "image": "metro-exodus.jpg"
+        }
+    }
+]
