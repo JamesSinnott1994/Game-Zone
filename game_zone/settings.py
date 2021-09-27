@@ -45,7 +45,11 @@ INSTALLED_APPS = [
     'home',
     'games',
     'bag',
-    'checkout'
+    'checkout',
+
+    # Other
+    'crispy_forms'
+
 ]
 
 MIDDLEWARE = [
@@ -59,6 +63,8 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'game_zone.urls'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap5'
 
 TEMPLATES = [
     {
@@ -74,8 +80,13 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.media',
                 'bag.contexts.bag_contents',
             ],
+            'builtins': [
+                'crispy_forms.templatetags.crispy_forms_tags',
+                'crispy_forms.templatetags.crispy_forms_field',
+            ]
         },
     },
 ]
