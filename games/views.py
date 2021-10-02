@@ -4,10 +4,12 @@ from django.db.models import Q
 from django.db.models.functions import Lower
 
 from .models import Game, Category
+from .forms import ProductForm
 
 # Create your views here.
-def all_games(request):
-    """A view to show all games"""
+
+def all_products(request):
+    """ A view to show all games, including sorting and search queries """
 
     games = Game.objects.all()
     query = None
@@ -56,13 +58,24 @@ def all_games(request):
     return render(request, 'games/games.html', context)
 
 
-def game_detail(request, game_id):
-    """ A view to show a game's details """
+def product_detail(request, product_id):
+    """ A view to show individual game details """
 
-    game = get_object_or_404(Game, pk=game_id)
+    game = get_object_or_404(Game, pk=product_id)
 
     context = {
         'game': game,
     }
 
-    return render(request, 'games/game-detail.html', context)
+    return render(request, 'games/product_detail.html', context)
+
+
+def add_product(request):
+    """ Add a game to the store """
+    form = ProductForm()
+    template = 'games/add_product.html'
+    context = {
+        'form': form,
+    }
+
+    return render(request, template, context)
