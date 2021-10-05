@@ -4,11 +4,11 @@ from games.models import Game
 
 
 class Wishlist(models.Model):
-    user_profile = models.ForeignKey(UserProfile, on_delete=models.SET_NULL,
+    user = models.ForeignKey(UserProfile, on_delete=models.SET_NULL,
                                      null=True, blank=True, related_name='wishlist')
 
     def __str__(self):
-        return f'Wishlist ({self.user_profile})'
+        return f'Wishlist ({self.user})'
 
 
 class WishlistItem(models.Model):
