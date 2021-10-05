@@ -1,0 +1,19 @@
+from django.db import models
+from profiles.models import UserProfile
+from games.models import Game
+
+
+class Wishlist(models.Model):
+    user_profile = models.ForeignKey(UserProfile, on_delete=models.SET_NULL,
+                                     null=True, blank=True, related_name='wishlist')
+
+    def __str__(self):
+        return f'Wishlist ({self.user_profile})'
+
+
+class WishlistItem(models.Model):
+    wishlist = models.ForeignKey(Wishlist, null=False, blank=False, on_delete=models.CASCADE, related_name='wishlist_items')
+    game = models.ForeignKey(Game, null=False, blank=False, on_delete=models.CASCADE, related_name='wishlist_games')
+
+    def __str__(self):
+        return self.game.name
