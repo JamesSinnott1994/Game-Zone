@@ -5,8 +5,9 @@ from django.db.models import Q
 from django.db.models.functions import Lower
 
 from .models import Game, Category
+from profiles.models import UserProfile
+from wishlist.models import Wishlist, WishlistItem
 from .forms import GameForm
-
 # Create your views here.
 
 def all_games(request):
@@ -62,10 +63,18 @@ def all_games(request):
 def game_detail(request, game_id):
     """ A view to show individual game details """
 
+    # Checks if game is in wishlist
+    user = get_object_or_404(UserProfile, user=request.user)
+    wishlist = Wishlist.objects.get_or_create(user=user)
+    wishlist_user = wishlist[0]
+
     game = get_object_or_404(Game, pk=game_id)
+
+    game_in_wishlist = WishlistItem.objects.filter(wishlist=wishlist_user, game=game).exists()
 
     context = {
         'game': game,
+        'game_in_wishlist': game_in_wishlist,
     }
 
     return render(request, 'games/game_detail.html', context)

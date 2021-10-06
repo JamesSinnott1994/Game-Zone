@@ -63,3 +63,7 @@ def add_to_wishlist(request, game_id):
     else:
         messages.error(request, "Click 'Add to wishlist' to add a item ")
         return render(request, 'home/index.html')
+
+@login_required
+def delete_from_wishlist(request, game_id):
+    return render(request, 'wishlist/wishlist.html')
