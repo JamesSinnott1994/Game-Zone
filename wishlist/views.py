@@ -66,4 +66,27 @@ def add_to_wishlist(request, game_id):
 
 @login_required
 def delete_from_wishlist(request, game_id):
-    return render(request, 'wishlist/wishlist.html')
+
+    redirect_url = request.POST.get('redirect_url')
+
+    user = get_object_or_404(UserProfile, user=request.user)
+    wishlist = Wishlist.objects.get_or_create(user=user)
+    wishlist_user = wishlist[0]
+
+    if request.POST:
+        game = Game.objects.get(pk=game_id)
+
+        game_in_wishlist = WishlistItem.objects.filter(game=game).exists()
+
+        if game_in_wishlist:
+            game = WishlistItem.objects.get(game=game)
+            game.delete()
+            messages.success(request, "Game removed from wishlist")
+            return render(request, 'wishlist/wishlist.html')
+
+        if game_in_wishlist is None:
+            messages.error(request, "Can't delete item as it is not in your wishlist")
+            return redirect(redirect_url)
+    else:
+        messages.error(request, 'Item can only be deleted from your wishlist')
+        return render(request, 'home/index.html')
