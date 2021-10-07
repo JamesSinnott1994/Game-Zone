@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="container container-content">
+
+        <div class="row d-flex justify-content-center">
+
+            <div class="col">
+
+                <div class="text-center">
+                    <h1>404 Error: Page Not Found</h1>
+                    <p>The page you were looking for could not be found. Please use the link below to go back to the Home page.</p>
+                    <a href="{% url 'home' %}" class="btn solid mx-auto mb-2">Home</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+{% endblock %}
