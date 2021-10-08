@@ -5,9 +5,16 @@ html {
 body {
     background: url('/media/hero.jpg') no-repeat center center fixed;
     background-size: cover;
-    height: calc(100vh - 164px);
+    height: 100vh;
     color: #555;
     font-family: 'Lato';
+}
+
+main {
+    min-height: 90%;
+}
+
+footer {
 }
 
 /* from Bulma */

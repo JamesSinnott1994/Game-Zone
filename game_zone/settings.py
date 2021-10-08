@@ -54,7 +54,7 @@ INSTALLED_APPS = [
 
 ]
 
-handler404 = 'game_zone.views.error_404'
+handler404 = 'home.views.error_404'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
