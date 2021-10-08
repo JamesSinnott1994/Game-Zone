@@ -63,19 +63,27 @@ def all_games(request):
 def game_detail(request, game_id):
     """ A view to show individual game details """
 
-    # Checks if game is in wishlist
-    user = get_object_or_404(UserProfile, user=request.user)
-    wishlist = Wishlist.objects.get_or_create(user=user)
-    wishlist_user = wishlist[0]
-
     game = get_object_or_404(Game, pk=game_id)
 
-    game_in_wishlist = WishlistItem.objects.filter(wishlist=wishlist_user, game=game).exists()
+    context = {}
 
-    context = {
-        'game': game,
-        'game_in_wishlist': game_in_wishlist,
-    }
+    # Checks if game is in wishlist
+    if request.user.is_anonymous:
+        context = {
+            'game': game,
+            'anonymousUser': request.user.is_anonymous,
+        }
+    else:
+        user = get_object_or_404(UserProfile, user=request.user)
+        wishlist = Wishlist.objects.get_or_create(user=user)
+        wishlist_user = wishlist[0]
+        game_in_wishlist = WishlistItem.objects.filter(wishlist=wishlist_user, game=game).exists()
+
+        context = {
+            'game': game,
+            'game_in_wishlist': game_in_wishlist,
+            'anonymousUser': request.user.is_anonymous,
+        }
 
     return render(request, 'games/game_detail.html', context)
 

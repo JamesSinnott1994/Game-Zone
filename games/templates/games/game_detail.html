@@ -93,18 +93,20 @@
                         </div>
                     </form>
 
-                    {% if game_in_wishlist %}
-                        <form class="form update-form" method="POST" action="{% url 'delete_from_wishlist' game.id %}">
-                            {% csrf_token %}
-                            <input type="hidden" name="redirect_url" value="{{ request.path }}">
-                            <button class="btn btn-black rounded-0 text-uppercase mt-5">Delete from wishlist</button>
-                        </form>
-                    {% else %}
-                        <form class="form update-form" method="POST" action="{% url 'add_to_wishlist' game.id %}">
-                            {% csrf_token %}
-                            <input type="hidden" name="redirect_url" value="{{ request.path }}">
-                            <button class="btn btn-black rounded-0 text-uppercase mt-5">Add to wishlist</button>
-                        </form>
+                    {% if anonymousUser == False %}
+                        {% if game_in_wishlist %}
+                            <form class="form update-form" method="POST" action="{% url 'delete_from_wishlist' game.id %}">
+                                {% csrf_token %}
+                                <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                                <button class="btn btn-black rounded-0 text-uppercase mt-5">Delete from wishlist</button>
+                            </form>
+                        {% else %}
+                            <form class="form update-form" method="POST" action="{% url 'add_to_wishlist' game.id %}">
+                                {% csrf_token %}
+                                <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                                <button class="btn btn-black rounded-0 text-uppercase mt-5">Add to wishlist</button>
+                            </form>
+                        {% endif %}
                     {% endif %}
 
                 </div>

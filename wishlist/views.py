@@ -7,14 +7,11 @@ from django.contrib.auth.decorators import login_required
 @login_required
 def wishlist(request):
     user = get_object_or_404(UserProfile, user=request.user)
-    print(user)
 
     wishlist = Wishlist.objects.get_or_create(user=user)
     wishlist_user = wishlist[0]
 
     wishlist_exists = WishlistItem.objects.filter(wishlist=wishlist_user).exists()
-
-    print(wishlist_user)
 
     games = []
     if wishlist_exists:
@@ -26,14 +23,12 @@ def wishlist(request):
             'wishlist': True,
             'games': games
         }
-        print("GAME IN WISHLIST")
         return render(request, 'wishlist/wishlist.html', context)
 
     else:
         context = {
             'wishlist': False,
         }
-        print("GAME NOT IN WISHLIST")
         return render(request, 'wishlist/wishlist.html', context)
 
 
@@ -42,7 +37,6 @@ def add_to_wishlist(request, game_id):
     redirect_url = request.POST.get('redirect_url')
 
     user = get_object_or_404(UserProfile, user=request.user)
-    print(user)
 
     wishlist = Wishlist.objects.get_or_create(user=user)
     wishlist_user = wishlist[0]
@@ -82,7 +76,7 @@ def delete_from_wishlist(request, game_id):
             game = WishlistItem.objects.get(game=game)
             game.delete()
             messages.success(request, "Game removed from wishlist")
-            return render(request, 'wishlist/wishlist.html')
+            return redirect(redirect_url)
 
         if game_in_wishlist is None:
             messages.error(request, "Can't delete item as it is not in your wishlist")
