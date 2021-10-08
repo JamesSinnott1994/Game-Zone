@@ -269,7 +269,7 @@
             "price": 32,
             "category": 2,
             "rating": 0,
-            "image": "godfall.jpg"
+            "image": "godfall.png"
         }
     },
     {
@@ -295,7 +295,7 @@
             "price": 32,
             "category": 2,
             "rating": 0,
-            "image": "terminator.jpg"
+            "image": "terminator.jfif"
         }
     },
     {
@@ -308,7 +308,7 @@
             "price": 48,
             "category": 2,
             "rating": 0,
-            "image": "oddworld.jpg"
+            "image": "oddworld.png"
         }
     },
     {
@@ -399,7 +399,7 @@
             "price": 35,
             "category": 3,
             "rating": 0,
-            "image": "last-of-us.jpg"
+            "image": "last-of-us.png"
         }
     },
     {
@@ -477,7 +477,7 @@
             "price": 25,
             "category": 4,
             "rating": 0,
-            "image": "sandbox.jpg"
+            "image": "minecraft.jpg"
         }
     },
     {

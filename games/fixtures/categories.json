@@ -27,8 +27,8 @@
         "pk": 4,
         "model": "games.category",
         "fields": {
-            "name": "xbox_360",
-            "friendly_name": "XBOX 360"
+            "name": "xbox_one",
+            "friendly_name": "XBOX One"
         }
     }
 ]
