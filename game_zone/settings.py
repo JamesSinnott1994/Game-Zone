@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-^cvpv(11b=0-kvb3%)*kwn^*1pph-z-tnxj=)c+r5-m2oolgcm'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -53,8 +53,6 @@ INSTALLED_APPS = [
     'crispy_forms'
 
 ]
-
-handler404 = 'home.views.error_404'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
