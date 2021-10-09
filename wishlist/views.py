@@ -6,6 +6,7 @@ from django.contrib.auth.decorators import login_required
 
 @login_required
 def wishlist(request):
+    """Shows all games in the user's wishlist"""
     user = get_object_or_404(UserProfile, user=request.user)
 
     wishlist = Wishlist.objects.get_or_create(user=user)
@@ -34,6 +35,7 @@ def wishlist(request):
 
 @login_required
 def add_to_wishlist(request, game_id):
+    """Adds game to the wishlist"""
     redirect_url = request.POST.get('redirect_url')
 
     user = get_object_or_404(UserProfile, user=request.user)
@@ -60,7 +62,7 @@ def add_to_wishlist(request, game_id):
 
 @login_required
 def delete_from_wishlist(request, game_id):
-
+    """Removes game from the wishlist"""
     redirect_url = request.POST.get('redirect_url')
 
     user = get_object_or_404(UserProfile, user=request.user)

@@ -67,7 +67,7 @@ def game_detail(request, game_id):
 
     context = {}
 
-    # Checks if game is in wishlist
+    # Wishlist button won't be shown for anonymous user
     if request.user.is_anonymous:
         context = {
             'game': game,
@@ -105,7 +105,7 @@ def add_game(request):
             messages.error(request, 'Failed to add game. Please ensure the form is valid.')
     else:
         form = GameForm()
-        
+       
     template = 'games/add_game.html'
     context = {
         'form': form,
