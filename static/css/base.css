@@ -6,15 +6,37 @@ body {
     background: url('/media/hero.jpg') no-repeat center center fixed;
     background-size: cover;
     height: 100vh;
-    color: #555;
+    color: #C7D5E0;
     font-family: 'Lato';
+}
+
+#topnav {
+    background-color: #171B25;
+}
+
+.text-silver {
+    color: #C7D5E0 !important;
+}
+
+footer {
+    background-color: #171B25;
+}
+
+.add-btn {
+    background-color: #708E05;
+    color: #C7D5E0;
+}
+
+.add-btn:hover {
+    color: white;
+}
+
+nav {
+    background-color: #171B25;
 }
 
 main {
     min-height: 90%;
-}
-
-footer {
 }
 
 /* from Bulma */
@@ -86,7 +108,7 @@ footer {
 	top: 0;
 	left: 0;
 	position: fixed;
-	background: white;
+	background-color: #1B2838 !important;
 	z-index: -1;
 }
 

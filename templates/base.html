@@ -37,10 +37,10 @@
   </head>
   <body>
     <header class="container-fluid fixed-top">
-        <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
+        <div id="topnav" class="row pt-lg-2 d-none d-lg-flex">
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
                 <a href="{% url 'home' %}" class="nav-link main-logo-link">
-                    <h2 class="logo-font text-black my-0"><strong>Game Zone</strong></h2>
+                    <h2 class="logo-font text-silver my-0"><strong>Game Zone</strong></h2>
                 </a>
             </div>
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
@@ -60,7 +60,7 @@
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <ul class="list-inline list-unstyled text-center text-lg-right my-0">
                     <li class="list-inline-item dropdown">
-                        <a class="text-black nav-link" href="#" id="user-options" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="text-silver nav-link" href="#" id="user-options" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <div class="text-center">
                                 <div><i class="fas fa-user fa-lg"></i></div>
                                 <p class="my-0">My Account</p>
@@ -80,7 +80,7 @@
                         </div>
                     </li>
                     <li class="list-inline-item">
-                        <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_bag' %}">
+                        <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-silver{% endif %} nav-link" href="{% url 'view_bag' %}">
                             <div class="text-center">
                                 <div><i class="fas fa-shopping-cart fa-lg"></i></div>
                                 <p class="my-0">
@@ -99,7 +99,7 @@
         <div class="row bg-white">
             <nav class="navbar navbar-expand-lg navbar-light w-100">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="fas fa-bars fa-lg text-silver"></span>
                 </button>
                 {% include 'includes/mobile-top-header.html' %}
                 {% include 'includes/main-nav.html' %}
@@ -139,7 +139,7 @@
     </main>
     
 
-    <footer class="container-fluid">
+    <footer class="container-fluid text-silver">
         <div class="row">
 
             <div class="col-6 col-md-4 mt-3 text-center">
@@ -159,7 +159,7 @@
                     <!-- Facebook -->
                     <li class="list-inline-item">
                         <a href="https://facebook.com" target="_blank">
-                            <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                            <i class="text-silver fab fa-facebook-f" aria-hidden="true"></i>
                             <span class="sr-only">Facebook</span>
                         </a>
                     </li>
@@ -167,7 +167,7 @@
                     <!-- Twitter -->
                     <li class="list-inline-item">
                         <a href="https://twitter.com" target="_blank">
-                            <i class="fab fa-twitter" aria-hidden="true"></i>
+                            <i class="text-silver fab fa-twitter" aria-hidden="true"></i>
                             <span class="sr-only">Twitter</span>
                         </a>
                     </li>
@@ -175,7 +175,7 @@
                     <!-- Instagram -->
                     <li class="list-inline-item">
                         <a href="https://instagram.com" target="_blank">
-                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                            <i class="text-silver fab fa-instagram" aria-hidden="true"></i>
                             <span class="sr-only">Instagram</span>
                         </a>
                     </li>
@@ -183,7 +183,7 @@
                     <!-- Youtube -->
                     <li class="list-inline-item">
                         <a href="https://youtube.com" target="_blank">
-                            <i class="fab fa-youtube" aria-hidden="true"></i>
+                            <i class="text-silver fab fa-youtube" aria-hidden="true"></i>
                             <span class="sr-only">Youtube</span>
                         </a>
                     </li>
