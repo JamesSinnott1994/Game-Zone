@@ -22,12 +22,12 @@ footer {
     background-color: #171B25;
 }
 
-.add-btn {
+.green-btn {
     background-color: #708E05;
     color: #C7D5E0;
 }
 
-.add-btn:hover {
+.green-btn:hover {
     color: white;
 }
 
