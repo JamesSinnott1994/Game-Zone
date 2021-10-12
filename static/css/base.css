@@ -139,12 +139,18 @@ a.category-badge > span.badge:hover {
     cursor: pointer;
 }
 
+.game-card {
+    color: #C7D5E0;
+    background-color: #2A475E;
+    border: 1px solid black;
+}
+
 .btt-link {
     text-decoration: none;
     background-color: #2A475E;
 }
 
-.btt-link:hover {
+.btt-link:hover, .game-img:hover {
     opacity: 0.6;
 }
 
