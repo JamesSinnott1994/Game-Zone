@@ -26,7 +26,7 @@
                 {% if bag_items %}
                     <div class="table-responsive rounded">
                         <table class="table table-sm table-borderless">
-                            <thead class="text-black">
+                            <thead class="text-silver">
                                 <tr>
                                     <th scope="col">Game Info</th>
                                     <th scope="col"></th>
@@ -46,10 +46,10 @@
                                         {% endif %}
                                     </td>
                                     <td class="py-3">
-                                        <p class="my-0"><strong>{{ item.game.name }}</strong></p>
+                                        <p class="my-0 text-silver"><strong>{{ item.game.name }}</strong></p>
                                     </td>
                                     <td class="py-3">
-                                        <p class="my-0">€{{ item.game.price }}</p>
+                                        <p class="my-0 text-silver">€{{ item.game.price }}</p>
                                     </td>
                                     <td class="py-3 w-25">
                                         <form class="form update-form" method="POST" action="{% url 'adjust_bag' item.item_id %}">
@@ -83,12 +83,12 @@
                                         <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}"><small>Remove</small></a>
                                     </td>
                                     <td class="py-3">
-                                        <p class="my-0">€{{ item.game.price | calc_subtotal:item.quantity }}</p>
+                                        <p class="my-0 text-silver">€{{ item.game.price | calc_subtotal:item.quantity }}</p>
                                     </td>
                                 </tr>
                             {% endfor %}
                             <tr>
-                                <td colspan="5" class="pt-5 text-right">
+                                <td colspan="5" class="pt-5 text-right text-silver">
                                     <h6><strong>Bag Total: €{{ total|floatformat:2 }}</strong></h6>
                                     <h6>Delivery: €{{ delivery|floatformat:2 }}</h6>
                                     <h4 class="mt-4"><strong>Grand Total: €{{ grand_total|floatformat:2 }}</strong></h4>
