@@ -173,6 +173,7 @@ input[name='q']::placeholder {
     top: 72px;
     right: 15px;
     z-index: 99999999999;
+    color: black;
 }
 
 .custom-toast {
