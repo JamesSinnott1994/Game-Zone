@@ -112,6 +112,10 @@ main {
 	z-index: -1;
 }
 
+.badge-bg {
+    background-color: #171B25;
+}
+
 a.category-badge > span.badge:hover {
     background: #212529 !important;
     color: #fff !important;
