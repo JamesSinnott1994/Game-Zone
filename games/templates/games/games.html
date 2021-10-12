@@ -69,7 +69,7 @@
                                 <div class="card-footer pt-0 border-0 text-left">
                                     <div class="row">
                                         <div class="col">
-                                            <p class="lead mb-0 text-left font-weight-bold">${{ game.price }}</p>
+                                            <p class="lead mb-0 text-left font-weight-bold">€{{ game.price }}</p>
                                             {% if game.category %}
                                             <p class="small mt-1 mb-0">
                                                 <a class="text-muted" href="{% url 'games' %}?category={{ game.category.name }}">
