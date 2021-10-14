@@ -1,6 +1,10 @@
 # Game Zone
 
+![image](readme-images/am-i-responsive.JPG)
+
 The purpose of this project is to build a Business-to-Consumer (B2C) E-commerce website for an online Gaming Store called "Game Zone".
+
+Link to site [here.](https://js-game-zone.herokuapp.com/)
 
 ## Table of Contents
 - [User Experience](#user-experience)
