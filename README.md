@@ -63,7 +63,7 @@ As the **site owner**, I want:
 #### Project Goal
 
 - Project goal:
-    - The goal of this project is to build a Full-Stack site based around business logic used to control a centrally-owned dataset. An authentication mechanism will be set up and paid access will be provided to the site's data and/or other activities based on the dataset, such as the purchase of a product/service.
+    - The goal of this project is to build a Full-Stack site based around business logic used to control a centrally-owned dataset. An authentication mechanism will be set up and paid access will be provided to the site's data and/or other activities based on the dataset, such as the purchase of a game/service.
 
 - Focus:
     - The main focus of this project is to create a visually appealing and intuitive Full-Stack online game store called "Game Zone" that will allow users to find and buy games of their choosing.
@@ -82,6 +82,7 @@ Opportunity/Problem | Importance  (1-5) | Viability/Feasibility  (1-5) | Impleme
 :-------- |:--------:|:--------:|:--------:
 Search | 5 | 4 | :heavy_check_mark:
 Sort / Filter | 5 | 4 | :heavy_check_mark:
+Pagination | 2 | 5 | :x:
 Add / Edit / Delete Games | 5 | 4 | :heavy_check_mark:
 Register | 5 | 5 | :heavy_check_mark:
 Log In / Out | 5 | 5 | :heavy_check_mark:
@@ -101,7 +102,7 @@ Wishlist | 3 | 5 | :heavy_check_mark:
 
 - Main features (For Minimal Viable Product)
     - Navigation Menu
-    - Pagination for Products page
+    - Pagination for Games page
     - Search / Sort / Filter functionality
     - Register
     - Log In
@@ -124,28 +125,29 @@ Wishlist | 3 | 5 | :heavy_check_mark:
 1. Home Page
 
 - For the Header:
-    - Top half will contain the site logo on the left, a search bar in the centre, and then a user profile and cart image on the right.
-    - The bottom half of the header in the centre will contain a number of links to different pages i.e. Home, Product, Contact, Wishlist.
+    - Top half contains the site logo on the left, a search bar in the centre, and then a user profile and cart image on the right.
+    - The bottom half of the header in the centre contains a number of links to different pages i.e. Home, Game, Wishlist.
 
-- Below the Header there will be a Hero image with a gaming background. This will contain a welcome and also a link which will bring the user to the Products page.
+- Below the Header there is a Hero image with a gaming background.
 
-- Underneath the Hero image there will be a number of different cards for the different Product categories.
+- Underneath the Hero image there is a number of different cards for the different Game categories.
 
-- The Footer at the bottom will contain copyright information, contact information, and social media links.
+- The Footer at the bottom contains copyright information, contact information, and social media links.
 
-2. Product Page
+2. Game Page
 
-- Will showcase all the products available in the store.
-- Will have a filtration menu on the left to filter products by category.
-- Will have an input box on top of the products that allows user to sort by price, newest, highest rated etc.
+- Showcases all the games available in the store.
+- Has a number of category buttons for bringing up a different category of game.
+- Has an input box on top of the games that allows users to sort by price, newest, highest rated etc.
 
-3. Product Information Page
+3. Game Detail Page
 
-- Will contain an enlarged image of the product.
-- Will contain a description and price information about the game.
-- There will be plus and minus input boxes for the quantities of the game.
-- There will be a button to add the item to the user's cart.
-- May contain reviews about the game as well.
+- Contains an enlarged image of the game.
+- Contains a description and price information about the game.
+- There is a plus and minus input box for the quantities of the game a user would like to buy.
+- There is a button to add the item to the user's cart.
+- There is a button to add the item to the user's wishlist.
+- There is a button to bring user back to the Games page.
 
 4. Register Page
 
@@ -155,36 +157,42 @@ Wishlist | 3 | 5 | :heavy_check_mark:
 
 - Login form for the user.
 
-6. Cart Page
+6. Bag / Cart Page
 
-- For the main area, three quarters of the page will be taken up with a table which displays information about all the products contained in your cart.
-- The last quarter of the page on the right will contain the grand total cost of all the items.
+- Contains game information on left i.e. game image, name, price. An input box to adjust quantity and then the price subtotal.
+- Grand total is shown on bottom of screen followed by two buttons i.e. "Keep Shopping" and "Secure Checkout".
 
 7. Checkout Page
 
-- Will contain a form on the left that allows user to enter their contact details and card payment information.
-- The order summary will be displayed on the right.
+- Contains a form on the left that allows user to enter their contact details and card payment information.
+- The order summary is displayed on the right.
+- Two buttons are below the form, "Adjust Bag" and "Complete Order".
 
-8. Contact Page
+8. Checkout Success Page
 
-- Form that allows users to contact the site administrator for any queries.
+- Informs user that a confirmation email has been sent to their email address.
+- Order / Delivery / Billing summary displayed in table.
 
-9. Profile Page
+9. Game Management Page (Admin only)
 
-- Will contain a form on the left that allows users to update their profile delivery information/
-- A summary of previous orders will be contained on the right.
+- Contains a form that allows the site administrator to add a new game.
+
+10. Profile Page
+
+- Contains a form on the left that allows users to update their profile delivery information.
+- A summary of previous orders is contained on the right.
 
 10. Wishlist Page
 
-- Will showcase all the games the user has added to their Wishlist.
-- Will show the game image on the left, with game information on the right.
-- There will be a button to add the game to the cart.
-- There will be a link to remove the game from the wishlist.
+- Showcases all the games the user has added to their Wishlist.
 
 11. 404 Error Page
 
-- Will show a not found image on the left.
-- Will show the 404 Error information on the right with a link to return to the Home Page.
+- Informs user of the 404 error and provides a link to return to the Home page.
+
+12. 500 Error Page
+
+- Informs user of the 500 error and provides a link to return to the Home page.
 
 ### Skeleton
 - Wireframes for the project can be found [here](https://github.com/JamesSinnott1994/Game-Zone/blob/master/wireframes/wireframes.pdf)
@@ -235,9 +243,9 @@ Wishlist Model (Custom model #1)
 
 | Field | Field Type | Field Options |
 | --- | --- | --- |
-| product | ForeignKey | Product, null=False, blank=False, on_delete=models.CASCADE |
+| game | ForeignKey | Game, null=False, blank=False, on_delete=models.CASCADE |
 
-**Products App:**
+**Games App:**
 
 Category Model
 
@@ -245,7 +253,7 @@ Category Model
 | --- | --- | --- |
 | name | CharField | max_length=254 |
 
-Product Model
+Game Model
 
 | Field | Field Type | Field Options |
 | --- | --- | --- |
@@ -283,7 +291,7 @@ OrderLineItem Model
 | Field | Field Type | Field Options |
 | --- | :--- | ---|
 | order | ForeignKey | Order, null=False, blank=False, on_delete=models.CASCADE, related_name="crateitems" |
-| product | ForeignKey | Product, null=False, blank=False, on_delete=models.CASCADE |
+| game | ForeignKey | Game, null=False, blank=False, on_delete=models.CASCADE |
 | quantity | IntegerField | null=False, blank=False, default=0
 | lineitem_total | DecimalField | max_digits=6, decimal_places=2, null=False, blank=False, editable=False
 
