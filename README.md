@@ -305,3 +305,24 @@ Review Model (Custom model #2)
 | review | TextField | null=True, blank=False |
 | added_by | ForeignKey | User, on_delete=models.CASCADE |
 | rating | IntegerField | default=0, validators=[MinValueValidator(1),MaxValueValidator(5)] |
+
+---
+## Credits
+
+### Code Attribution
+- Much of the project is built with the help of the Boutique Ado project coded by [Chris](https://github.com/ckz8780).
+
+### Game Description Attributions
+- The descriptions for each game were gotten from the game's wikipedia page.
+
+### Image Source Attribution
+- [Hero image](https://cdn.wccftech.com/wp-content/uploads/2013/11/xbox-one-vs-ps41.jpg)
+- There are 48 game images used for the site. These were taken from various sites following a Google image search.
+
+### Acknowledgements
+I would like to thank:
+- My mentor [Maranatha Ilesanmi](https://ng.linkedin.com/in/ilesanmimaranatha) for his very helpful advice during the project meetings and throughout my time with the Code Institute.
+- Anna Greaves for her videos on doing the Readme document.
+- The Slack Community for help with certain problems.
+- Student Support.
+- Tutor Support.
