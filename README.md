@@ -196,22 +196,23 @@ Wishlist | 3 | 5 | :heavy_check_mark:
 
 ### Skeleton
 - Wireframes for the project can be found [here](https://github.com/JamesSinnott1994/Game-Zone/blob/master/wireframes/wireframes.pdf)
+- (Due to time constraints I decided to follow a KISS (Keep-It-Super-Simple) approach, so the website didn't follow what was in the wireframes exactly.)
 
 ### Surface
 - #### Typography:
-    - Helvetica will be the font that is used for header, titles and links.
-    - Roboto will be the font used for the paragraph text.
+    - Lato is the font used throughout the site.
 
 - #### Colour scheme:
     ![Colour Scheme](readme-images/palette.png)
 
-    - For the navbar and footbar, the colour used will be Raisin Blue (Dark Navy Blue)
-    - The Primary background colour will be Indigo Dye (Light Navy Blue)
-    - The Secondary background colour will be Gunmetal (Slighter Dark Navy Blue)
-    - For buttons the colour will be Maya Blue.
-    - For text, the colour will be Beau Blue (Light Grey)
-    - For the "Add to Cart" button the colour will be Green.
-    - For any notifications that should catch the eye i.e. number of items in cart, the orangish colour (Copper Crayola) will be used.
+    - For the navbar and footbar, the colour used is Raisin Blue (Dark Navy Blue)
+    - The Primary background colour is Indigo Dye (Light Navy Blue)
+    - The Secondary background colour is Gunmetal (Slighter Dark Navy Blue)
+    - For text, the colour is Beau Blue (Light Grey)
+    - For the "Add to Cart", "Checkout" buttons the colour is Green.
+
+    - For buttons the colour is Maya Blue (Not implemented).
+    - For any notifications that should catch the eye i.e. number of items in cart, the orangish colour (Copper Crayola) is used (Not implemented).
 
 - #### Media:
     - There will be a Hero Image for the Home page.
