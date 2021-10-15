@@ -78,23 +78,23 @@ As the **site owner**, I want:
     - The value for a possible site owner, is that it will allow them to earn money on each game purchased on the site.
 
 #### Strategy Tradeoffs
-Opportunity/Problem | Importance  (1-5) | Viability/Feasibility  (1-5)
-:-------- |:--------:|:--------:
-Search | 5 | 4
-Sort / Filter | 5 | 4
-Add / Edit / Delete Games | 5 | 4
-Register | 5 | 5
-Log In / Out | 5 | 5
-User Authentication | 5 | 4
-Secure purchase | 5 | 4
-Purchase confirmation email | 5 | 3
-Contact site owner | 3 | 4
-Recover account details | 5 | 3
-Add / Remove items to / from cart | 5 | 3
-Add / Edit / Delete reviews | 2 | 3
-Update Profile Information | 3 | 5
-View Previous orders | 4 | 4
-Wishlist | 3 | 5
+Opportunity/Problem | Importance  (1-5) | Viability/Feasibility  (1-5) | Implemented
+:-------- |:--------:|:--------:|:--------:
+Search | 5 | 4 | :heavy_check_mark:
+Sort / Filter | 5 | 4 | :heavy_check_mark:
+Add / Edit / Delete Games | 5 | 4 | :heavy_check_mark:
+Register | 5 | 5 | :heavy_check_mark:
+Log In / Out | 5 | 5 | :heavy_check_mark:
+User Authentication | 5 | 4 | :heavy_check_mark:
+Secure purchase | 5 | 4 | :heavy_check_mark:
+Purchase confirmation email | 5 | 3 | :heavy_check_mark:
+Contact site owner | 3 | 4 | :heavy_check_mark:
+Recover account details | 5 | 3 | :heavy_check_mark:
+Add / Remove items to / from cart | 5 | 3 | :heavy_check_mark:
+Add / Edit / Delete reviews | 2 | 3 | :x:
+Update Profile Information | 3 | 5 | :heavy_check_mark:
+View Previous orders | 4 | 4 | :heavy_check_mark:
+Wishlist | 3 | 5 | :heavy_check_mark:
 
 
 ### Scope
