@@ -182,15 +182,19 @@ Wishlist | 3 | 5 | :heavy_check_mark:
 - Contains a form on the left that allows users to update their profile delivery information.
 - A summary of previous orders is contained on the right.
 
-10. Wishlist Page
+11. Add Game (Game Management) Page
+
+- Contains a form on the left that allows the site administrator to add a game to the site.
+
+12. Wishlist Page
 
 - Showcases all the games the user has added to their Wishlist.
 
-11. 404 Error Page
+13. 404 Error Page
 
 - Informs user of the 404 error and provides a link to return to the Home page.
 
-12. 500 Error Page
+14. 500 Error Page
 
 - Informs user of the 500 error and provides a link to return to the Home page.
 
@@ -230,21 +234,13 @@ UserProfile Model
 | Field | Field Type | Field Options |
 | --- | :--- | ---|
 | user | OneToOneField | User, on_delete=models.CASCADE |
-| default_full_name | CharField | max_length=80, null=True, blank=True |
-| default_email | EmailField | max_length=254, null=True, blank=True |
-| default_contact_number | CharField | max_length=20, null=True, blank=True |
-| default_address_line_1 | CharField | max_length=50, null=True, blank=True |
-| default_address_line_2 | CharField | max_length=50, null=True, blank=True |
-| default_town_or_city | CharField | max_length=50, null=True, blank=True |
-| default_county | CharField | max_length=50, null=True, blank=True |
+| default_phone_number  | CharField | max_length=80, null=True, blank=True |
+| default_street_address1  | CharField | max_length=80, null=True, blank=True |
+| default_street_address2  | CharField | max_length=80, null=True, blank=True |
+| default_town_or_city | CharField | max_length=40, null=True, blank=True |
+| default_county | CharField | max_length=80, null=True, blank=True |
 | default_postcode | CharField | max_length=20, null=True, blank=True |
 | default_country | CountryField | blank_label="Country", null=True, blank=True |
-
-Wishlist Model (Custom model #1)
-
-| Field | Field Type | Field Options |
-| --- | --- | --- |
-| game | ForeignKey | Game, null=False, blank=False, on_delete=models.CASCADE |
 
 **Games App:**
 
@@ -253,15 +249,18 @@ Category Model
 | Field | Field Type | Field Options |
 | --- | --- | --- |
 | name | CharField | max_length=254 |
+| friendly_name | CharField | max_length=254, null=True, blank=True |
 
 Game Model
 
 | Field | Field Type | Field Options |
 | --- | --- | --- |
-| name | CharField | max_length=254, null=True |
 | category | ForeignKey | 'Category', null=True, blank=True, on_delete=models.SET_NULL |
-| price | DecimalField | max_digits=6, deciaml_places=2
+| name | CharField | max_length=254 |
+| genre | CharField | max_length=254 |
 | description | TextField | null=True, blank=True |
+| price | DecimalField | max_digits=6, deciaml_places=2 |
+rating = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True) |
 | image | ImageField | null=True, blank=True |
 
 **Checkout App:**
@@ -272,19 +271,20 @@ Order Model
 | --- | --- | ---|
 | order_number | CharField | max_length=32, null=False, editable=False |
 | user_profile | ForeignKey | UserProfile, on_delete=models.SET_NULL, null=True, blank=False, related_name='orders' |
-| full_name | CharField | max_length=80, null=False, blank=False |
+| full_name | CharField | max_length=50, null=False, blank=False |
 | email | EmailField | max_length=254, null=False, blank=False |
-| contact_number | CharField | max_length=20, null=True, blank=True |
-| address_line_1 | CharField | max_length=50, null=False, blank=False |
-| address_line_2 | CharField | max_length=50, null=False, blank=False |
-| town_or_city | CharField | max_length=50, null=False, blank=False |
-| county | CharField | max_length=50, null=True, blank=True |
-| postcode | CharField | max_length=20, null=True, blank=True |
+| phone_number | CharField | max_length=20, null=True, blank=True |
 | country | CountryField | blank_label="Country *", null=False, blank=False |
-| coupon | ForeignKey | Coupon, on_delete=models.SET_NULL, null=True, blank=True |
+| postcode | CharField | max_length=20, null=True, blank=True |
+| town_or_city | CharField | max_length=40, null=False, blank=False |
+| street_address1  | CharField | max_length=80, null=False, blank=False |
+| street_address2  | CharField | max_length=80, null=False, blank=False |
+| county | CharField | max_length=80, null=True, blank=True |
 | date | DateTimeField | auto_now_add=True |
+| delivery_cost  | DecimalField | max_digits=6, decimal_places=2, null=False, default=0 |
 | order_total | DecimalField | max_digits=10, decimal_places=2, null=False, default=0 |
-| original_crate | TextField | null=False, blank=False, default='' |
+| grand_total  | DecimalField | max_digits=10, decimal_places=2, null=False, default=0 |
+| original_bag | TextField | null=False, blank=False, default='' |
 | stripe_pid | CharField | max_length=254, null=False, blank=False, default='' |
 
 OrderLineItem Model
@@ -293,18 +293,23 @@ OrderLineItem Model
 | --- | :--- | ---|
 | order | ForeignKey | Order, null=False, blank=False, on_delete=models.CASCADE, related_name="crateitems" |
 | game | ForeignKey | Game, null=False, blank=False, on_delete=models.CASCADE |
-| quantity | IntegerField | null=False, blank=False, default=0
-| lineitem_total | DecimalField | max_digits=6, decimal_places=2, null=False, blank=False, editable=False
+| quantity | IntegerField | null=False, blank=False, default=0 |
+| lineitem_total | DecimalField | max_digits=6, decimal_places=2, null=False, blank=False, editable=False |
 
-**Reviews App:**
+**Wishlist App:**
 
-Review Model (Custom model #2)
+Wishlist Model **(Custom model #1)**
 
 | Field | Field Type | Field Options |
 | --- | --- | --- |
-| review | TextField | null=True, blank=False |
-| added_by | ForeignKey | User, on_delete=models.CASCADE |
-| rating | IntegerField | default=0, validators=[MinValueValidator(1),MaxValueValidator(5)] |
+| user | ForeignKey | UserProfile, on_delete=models.SET_NULL, null=True, blank=True, related_name='wishlist' |
+
+WishlistItem Model **(Custom model #2)**
+
+| Field | Field Type | Field Options |
+| --- | --- | --- |
+| wishlist | ForeignKey | Wishlist, null=False, blank=False, on_delete=models.CASCADE, related_name='wishlist_items' |
+| game | ForeignKey | Game, null=False, blank=False, on_delete=models.CASCADE, related_name='wishlist_games' |
 
 ---
 ## Technologies
