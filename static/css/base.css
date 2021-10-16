@@ -31,8 +31,10 @@ footer {
     color: white;
 }
 
-nav {
+#nav {
     background-color: #171B25;
+    margin: 0;
+    padding: 0;
 }
 
 main {
