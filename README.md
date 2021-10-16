@@ -307,6 +307,48 @@ Review Model (Custom model #2)
 | rating | IntegerField | default=0, validators=[MinValueValidator(1),MaxValueValidator(5)] |
 
 ---
+## Technologies
+
+### Workspace
+
+- [Gitpod](https://www.gitpod.io/)
+
+### Languages
+
+- [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
+- [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [JavaScript](https://www.javascript.com/)
+- [Python3](https://www.python.org/)
+
+### Frameworks, Libraries, Other
+
+- [Heroku](https://dashboard.heroku.com/). The cloud platform used to deploy and run the code pushed to the associated GitHub repository.
+- [Django](https://www.djangoproject.com/) - The project was built using Django's web framework.
+- [SQLite](https://www.sqlite.org/index.html) - default Django's database used in development.
+- [PostgreSQL](https://www.postgresql.org/) - production database through Heroku.
+- [Bootstrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/) - CSS framework.
+- [jQuery](https://jquery.com/)
+- [Google Fonts](https://fonts.google.com/)
+- [AWS Amazon S3](https://aws.amazon.com/s3/) - Amazon Simple Storage Service (Amazon S3) was used to store media and static files used in the project.
+- [Font Awesome](https://fontawesome.com/)
+- [Stripe](https://stripe.com/docs) - Stripe was used for the online payment authentication and processing system.
+
+### Version Control
+
+- [Git](https://git-scm.com/)
+- [Github](https://github.com/)
+
+### Wireframes
+
+- [Balsamiq](https://balsamiq.com/)
+
+---
+## Testing
+
+---
+## Deployment
+
+---
 ## Credits
 
 ### Code Attribution
