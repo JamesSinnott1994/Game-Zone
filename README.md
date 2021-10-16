@@ -350,6 +350,8 @@ WishlistItem Model **(Custom model #2)**
 ---
 ## Testing
 
+Separate file for testing is located [here.](TESTING.md)
+
 ---
 ## Deployment
 
