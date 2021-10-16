@@ -19,6 +19,32 @@ Back to [Readme file.](README.md)
 ---
 ## Code Validation
 
+<br/>
+
+### 1. Testing HTML with [The W3C Markup Validation Service](https://validator.w3.org/)
+
+The following errors were detected on the Home page and these errors were common to all pages.
+
+![HTML Errors Image](readme-images/html-errors.JPG)
+
+- The solution for Error 3 was simply to re-name the ID on the mobile-top-header.html page from "user-options" to "user-options-mobile". This page was included with base.html which was where the duplication was coming from.
+
+- The solution for errors 1, 2 and 4 was simply to replace the "nav" element with a "ul" element.
+
+Once those issues were solved there was no more validation issues on any of the pages.
+
+<br/>
+
+### 2. Testing CSS with the [Jigsaw CSS Validation Service ](https://jigsaw.w3.org/css-validator/)
+
+<br/>
+
+No errors were found for the base.css, profile.css or checkout.css files.
+
+### 3. Testing JavaScript with [JSHint](https://jshint.com/)
+
+<br/>
+
 ---
 ## Performance Testing
 
