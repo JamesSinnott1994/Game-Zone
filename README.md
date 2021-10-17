@@ -53,7 +53,7 @@ As a **registered user**, in addition to the above, I want:
 
 As the **site owner**, I want:
 
-1. To be able to add new games or updating existing games in the store.
+1. To be able to add new games or update existing games in the store.
 2. To be able to delete games in the store.
 3. To provide a visually appealing website for all screen sizes and devices.
 4. To provide a secure payment system for users of the site.

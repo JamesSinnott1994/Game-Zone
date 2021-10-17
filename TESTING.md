@@ -118,6 +118,195 @@ Home | Games | Game Detail | Bag / Cart
 ---
 ## User Stories Testing
 
+As a **first-time visitor**, I want:
+
+1. To be able to view games on the site.
+
+- User can do this by visiting the Games page.
+
+<br/>
+
+![View Games](readme-images/user-story-screenshots/view-games.JPG)
+
+2. To be able to search/sort/filter the games on the site.
+
+- User can search by typing a query into the search bar at the top.
+
+<br/>
+
+![Search](readme-images/user-story-screenshots/search.JPG)
+
+- User can sort by using the select box on the right of the games screen.
+
+<br/>
+
+![Sort](readme-images/user-story-screenshots/sort.JPG)
+
+- User can filter by category by using the buttons on top of the games screen.
+
+<br/>
+
+![Filter](readme-images/user-story-screenshots/filter.JPG)
+
+3. To register securely for the site.
+
+- Registration is secure.
+- User is asked to enter their email and password twice.
+
+<br/>
+
+![Register](readme-images/user-story-screenshots/register.JPG)
+
+- User is also asked to verify their email address.
+
+<br/>
+
+![register](readme-images/user-story-screenshots/verify.JPG)
+
+4. To know the price of each game.
+
+- User can easily see the price of each game underneath it's name.
+
+<br/>
+
+![Price](readme-images/user-story-screenshots/price.JPG)
+
+5. To be able to add games to the cart.
+
+- Done by clicking the "Add to Bag" button on the game detail page.
+
+<br/>
+
+![Add to Cart](readme-images/user-story-screenshots/add-to-cart.JPG)
+
+6. To be able to contact the company.
+
+- Company email address is available in footer.
+
+<br/>
+
+![Contact](readme-images/user-story-screenshots/contact.JPG)
+
+7. To be able to get visual feedback when an action is completed.
+
+- Visual feedback is provided by using Toasts, which appear in the top-right of the screen after the user completes an action such as adding a game to the bag/cart.
+
+<br/>
+
+![Feedback](readme-images/user-story-screenshots/feedback.png)
+
+8. To see a visually appealing website.
+
+- A matter of perspective, but I think the colour scheme of the website and all of the images look good :)
+
+9. The website to be intuitive and simple to use.
+
+- The website is intuitive and easy to use, with the navbar containing all the links available across all pages.
+
+<br/>
+
+As a **registered user**, in addition to the above, I want:
+
+1. To be able to easily login to the site.
+
+- Logging-in is easily then and a user can choose to be remembered to make logging-in even easier.
+
+<br/>
+
+![Login](readme-images/user-story-screenshots/login.JPG)
+
+2. To be able to easily add and remove items to and from the cart.
+
+- Adding to the cart can be done through the game detail page as seen in an image above.
+
+- Removing an item from the cart is done by clicking the red "Remove" link below the quantity input box on the bag/cart page.
+
+<br/>
+
+![Add and Remove](readme-images/user-story-screenshots/add-and-remove.JPG)
+
+3. To be able to securely purchase items on cart.
+
+- Secure purchasing is done with Stripe payments on the checkout page. 
+
+<br/>
+
+![Purchase](readme-images/user-story-screenshots/purchase.JPG)
+
+4. To receive a purchase confirmation email.
+
+- Purchase confirmation email is sent to user's email address.
+
+<br/>
+
+![Confirmation](readme-images/user-story-screenshots/confirmation.JPG)
+
+5. To be able to easily update my contact, profile and delivery information.
+
+- This is done via the form on the left of the Profile page.
+
+<br/>
+
+![Profile Info](readme-images/user-story-screenshots/profile.JPG)
+
+6. To be able to view previous orders
+
+- Can be seen on the right of the Profile page.
+
+<br/>
+
+![Orders](readme-images/user-story-screenshots/orders.JPG)
+
+As the **site owner**, I want:
+
+1. To be able to add new games or update existing games in the store.
+
+- Site administrator can add new games to the site using the form on the Add Game page.
+
+<br/>
+
+![Add Game](readme-images/user-story-screenshots/add-game.JPG)
+
+- Site administrator can update games on the Edit Game Page
+
+<br/>
+
+![Edit Game](readme-images/user-story-screenshots/edit-game.JPG)
+
+2. To be able to delete games in the store.
+
+- Site administrator can delete a game by clicking the "Red" delete button.
+
+<br/>
+
+![Delete Game](readme-images/user-story-screenshots/delete-game.JPG)
+
+3. To provide a visually appealing website for all screen sizes and devices.
+
+- Website looks well on ipad.
+
+<br/>
+
+![Mobile](readme-images/user-story-screenshots/ipad.JPG)
+
+- Website looks well on mobile.
+
+<br/>
+
+![Ipad](readme-images/user-story-screenshots/mobile.JPG)
+
+4. To provide a secure payment system for users of the site.
+
+- Secure purchasing is done with Stripe payments on the checkout page. (See one of the images above) 
+
+5. For users to be able to recover their account details.
+
+- This feature could be implemented in a future release of this project, but for now a user can contact the site administrator by using the email in the footer of every page.
+
+6. To be able to access the admin section of the site to view orders made, the items they contain and the delivery information.
+
+- Site administrator can successfully access admin page to manage all items contained in the database.
+
 ---
 ## Bugs
 
