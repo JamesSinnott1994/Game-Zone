@@ -13,6 +13,63 @@ Back to [Readme file.](README.md)
 ---
 ## Functionality Testing
 
+- Testing was applied throughout development to make sure everything worked as it should.
+
+### Base Template (From which all pages inherit)
+
+- The "Game Zone" logo on the left of the navbar successfully goes to the Home page.
+- Search box in navbar successfully returns the games that the user searched for.
+- The My Account dropdown links (Register, Login, My Profile etc) take the user to the correct destination.
+- The Cart icon link takes the user to the bag page if logged in. If not logged in user is taken to the sign in page.
+- The Home, Game dropdown menu and Wishlist links take the user to the correct destination.
+- The Footer social media links correctly go to the right destination.
+
+### Games Page
+
+- The category buttons on top of the page (PC, PS5, PS4, XBOX One) correctly filter the games by category.
+- The sort select box on the right of the page correctly sorts the items by price, name, category etc.
+- Clicking a game's image successfully brings the user to the game detail page.
+
+### Game Detail Page
+
+- The quantity input box works as it should. User is not allowed go below 1 game.
+- The "Keep Shopping" button successfully takes user back to the Games page.
+- The "Add to Bag" button successfully adds a game to the user's bag.
+- The "Add to Wishlist" button successfully adds game to user's wishlist.
+- The "Delete from Wishlist" button successfully removes game from user's wishlist.
+
+### Bag Page
+
+- Quantity input box works as it should.
+- Clicking the "Update" button successfully updates the quantity of the game that the user would like to buy.
+- Clicking "Remove" button successfully removes game from the bag.
+- The "Keep Shopping" button successfully takes user back to the Games page.
+- The "Secure Checkout" button successfully brings the user to the Checkout page.
+
+### Checkout Page
+
+- Form works as it should making sure user has filled in all input boxes.
+- The "Adjust Bag" button takes the user back to the bag page.
+- The "Complete Order" button uses Stripe to securely allow the user to pay for their order.
+
+### Profile Page
+
+- Form elements on the left of the page work as they should to allow a user to update their default delivery information.
+- Clicking an order link on the right successfully brings up all details for that order.
+
+### Add Game Page
+
+- All form elements work as they should. Game is successfully added when form is submitted.
+
+### Edit Game Page
+
+- All form elements work as they should. Game is successfully updated when form is submitted.
+
+### Login / Registration Pages
+
+- Form elements work as they should with user feedback on error.
+- User is successfully created and added to the database.
+
 ---
 ## Browser Compatability
 
