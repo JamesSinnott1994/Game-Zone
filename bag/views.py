@@ -1,4 +1,6 @@
-from django.shortcuts import render, redirect, reverse, HttpResponse, get_object_or_404
+from django.shortcuts import (
+    render, redirect, reverse, HttpResponse, get_object_or_404
+)
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 
@@ -6,11 +8,13 @@ from games.models import Game
 
 # Create your views here.
 
+
 @login_required
 def view_bag(request):
     """ A view that renders the bag contents page """
 
     return render(request, 'bag/bag.html')
+
 
 @login_required
 def add_to_bag(request, item_id):
@@ -23,13 +27,16 @@ def add_to_bag(request, item_id):
 
     if item_id in list(bag.keys()):
         bag[item_id] += quantity
-        messages.success(request, f'Updated {game.name} quantity to {bag[item_id]}')
+        messages.success(
+            request, f'Updated {game.name} quantity to {bag[item_id]}'
+        )
     else:
         bag[item_id] = quantity
         messages.success(request, f'Added {game.name} to your bag')
 
     request.session['bag'] = bag
     return redirect(redirect_url)
+
 
 @login_required
 def adjust_bag(request, item_id):
@@ -41,13 +48,18 @@ def adjust_bag(request, item_id):
 
     if quantity > 0:
         bag[item_id] = quantity
-        messages.success(request, f'Updated {game.name} quantity to {bag[item_id]}')
+        messages.success(
+            request, f'Updated {game.name} quantity to {bag[item_id]}'
+        )
     else:
         bag.pop(item_id)
-        messages.success(request, f'Removed {game.name} from your bag')
+        messages.success(
+            request, f'Removed {game.name} from your bag'
+        )
 
     request.session['bag'] = bag
     return redirect(reverse('view_bag'))
+
 
 @login_required
 def remove_from_bag(request, item_id):

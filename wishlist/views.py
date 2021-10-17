@@ -1,4 +1,7 @@
-from django.shortcuts import render, redirect, reverse, HttpResponse, get_list_or_404, get_object_or_404
+from django.shortcuts import (
+    render, redirect, reverse, HttpResponse,
+    get_list_or_404, get_object_or_404
+)
 from .models import Game, UserProfile, Wishlist, WishlistItem
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
@@ -12,7 +15,9 @@ def wishlist(request):
     wishlist = Wishlist.objects.get_or_create(user=user)
     wishlist_user = wishlist[0]
 
-    wishlist_exists = WishlistItem.objects.filter(wishlist=wishlist_user).exists()
+    wishlist_exists = WishlistItem.objects.filter(
+        wishlist=wishlist_user
+    ).exists()
 
     games = []
     if wishlist_exists:
@@ -46,7 +51,10 @@ def add_to_wishlist(request, game_id):
     game = Game.objects.get(pk=game_id)
 
     if request.POST:
-        game_in_wishlist = WishlistItem.objects.filter(wishlist=wishlist_user, game=game).exists()
+        game_in_wishlist = WishlistItem.objects.filter(
+            wishlist=wishlist_user,
+            game=game
+        ).exists()
         if game_in_wishlist:
             messages.error(request, "Game already in your wishlist")
             return redirect(redirect_url)
@@ -59,6 +67,7 @@ def add_to_wishlist(request, game_id):
     else:
         messages.error(request, "Click 'Add to wishlist' to add a item ")
         return render(request, 'home/index.html')
+
 
 @login_required
 def delete_from_wishlist(request, game_id):
@@ -81,7 +90,10 @@ def delete_from_wishlist(request, game_id):
             return redirect(redirect_url)
 
         if game_in_wishlist is None:
-            messages.error(request, "Can't delete item as it is not in your wishlist")
+            messages.error(
+                request,
+                "Can't delete item as it is not in your wishlist"
+            )
             return redirect(redirect_url)
     else:
         messages.error(request, 'Item can only be deleted from your wishlist')

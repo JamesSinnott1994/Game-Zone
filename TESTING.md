@@ -45,6 +45,36 @@ No errors were found for the base.css, profile.css or checkout.css files.
 
 <br/>
 
+The following JavaScript files and code snippets were tested:
+
+- base.html JavaScript
+- wishlist.html JavaScript
+- countryfield.js
+- games.html JavaScript
+- quantity_input_script.html JavaScript
+- stripe_elements.js
+- bag.html JavaScript
+
+No major errors were discovered in any of the files. Only minor errors such as missing semi-colons and the use of ES6 syntax which was easily sorted.
+
+### 4. Testing Python with [PEP8 online](http://pep8online.com/)
+
+All python files were tested.
+
+There were 3 minor errors encountered that existed in most files:
+
+1. Blank lines containing whitespace.
+
+2. Lines being too long.
+
+3. 2 blank lines not existing between functions.
+
+These problems were easily solved by tabbing and spacing, and also by using parantheses for lines that were too long.
+
+<br/>
+
+
+
 ---
 ## Performance Testing
 

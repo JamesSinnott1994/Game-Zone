@@ -10,6 +10,7 @@ from wishlist.models import Wishlist, WishlistItem
 from .forms import GameForm
 # Create your views here.
 
+
 def all_games(request):
     """ A view to show all games, including sorting and search queries """
 
@@ -33,7 +34,7 @@ def all_games(request):
                 if direction == 'desc':
                     sortkey = f'-{sortkey}'
             games = games.order_by(sortkey)
-            
+
         if 'category' in request.GET:
             categories = request.GET['category'].split(',')
             games = games.filter(category__name__in=categories)
@@ -42,9 +43,11 @@ def all_games(request):
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
-                messages.error(request, "You didn't enter any search criteria!")
+                messages.error(
+                    request, "You didn't enter any search criteria!"
+                )
                 return redirect(reverse('games'))
-            
+
             queries = Q(name__icontains=query) | Q(description__icontains=query)
             games = games.filter(queries)
 
@@ -77,7 +80,9 @@ def game_detail(request, game_id):
         user = get_object_or_404(UserProfile, user=request.user)
         wishlist = Wishlist.objects.get_or_create(user=user)
         wishlist_user = wishlist[0]
-        game_in_wishlist = WishlistItem.objects.filter(wishlist=wishlist_user, game=game).exists()
+        game_in_wishlist = WishlistItem.objects.filter(
+            wishlist=wishlist_user, game=game
+        ).exists()
 
         context = {
             'game': game,
@@ -102,10 +107,13 @@ def add_game(request):
             messages.success(request, 'Successfully added game!')
             return redirect(reverse('game_detail', args=[game.id]))
         else:
-            messages.error(request, 'Failed to add game. Please ensure the form is valid.')
+            messages.error(
+                request,
+                'Failed to add game. Please ensure the form is valid.'
+            )
     else:
         form = GameForm()
-       
+
     template = 'games/add_game.html'
     context = {
         'form': form,
@@ -129,7 +137,10 @@ def edit_game(request, game_id):
             messages.success(request, 'Successfully updated game!')
             return redirect(reverse('game_detail', args=[game.id]))
         else:
-            messages.error(request, 'Failed to update game. Please ensure the form is valid.')
+            messages.error(
+                request,
+                'Failed to update game. Please ensure the form is valid.'
+            )
     else:
         form = GameForm(instance=game)
         messages.info(request, f'You are editing {game.name}')
