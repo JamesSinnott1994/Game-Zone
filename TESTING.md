@@ -16,6 +16,25 @@ Back to [Readme file.](README.md)
 ---
 ## Browser Compatability
 
+- I tested the appearance and responsiveness of the website across many different devices and browsers. Generally, the appearance and responsiveness looks quite good on the different devices, and there is no difference between the browsers.
+
+- Browsers tested:
+    - Brave
+    - Chrome
+    - Firefox
+    - Microsoft Edge
+- Devices tested:
+    - Windows laptop
+    - iPad
+    - Android Phone
+- Devices tested in DevTools:
+    - Moto G4
+    - iPhone 6/7/8
+    - iPad
+- Custom responsive viewport sizes created for testing on larger screens than my laptop:
+    - 1280px x 802px (Larger laptop)
+    - 1600px x 992px (Desktop)
+
 ---
 ## Code Validation
 
@@ -72,8 +91,6 @@ There were 3 minor errors encountered that existed in most files:
 These problems were easily solved by tabbing and spacing, and also by using parantheses for lines that were too long.
 
 <br/>
-
-
 
 ---
 ## Performance Testing
