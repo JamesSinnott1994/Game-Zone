@@ -95,6 +95,26 @@ These problems were easily solved by tabbing and spacing, and also by using para
 ---
 ## Performance Testing
 
+Testing page with Lighthouse in Chrome Dev Tools to optimise performance, accessibility, best practices and SEO
+
+- I carried out Lighthouse tests on the 4 main views on the site: Home, Games, Game Details Page and the Bag / Cart view (with three items in the cart).
+
+- Performance was generally good on desktop but suffered on mobile due to image sizes and the large number of images displayed on the game page.
+
+- This could be improved upon in the future by reducing image sizes and using pagination on the games page.
+
+### Desktop Performance
+
+Home | Games | Game Detail | Bag / Cart
+:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
+![](readme-images/lighthouse/home-page-desktop-report.JPG) | ![](readme-images/lighthouse/games-page-desktop-report.JPG) | ![](readme-images/lighthouse/game-detail-page-desktop-report.JPG) | ![](readme-images/lighthouse/bag-page-desktop-report.JPG)
+
+### Mobile Performance
+
+Home | Games | Game Detail | Bag / Cart
+:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
+![](readme-images/lighthouse/home-page-mobile-report.JPG) | ![](readme-images/lighthouse/games-page-mobile-report.JPG) | ![](readme-images/lighthouse/game-detail-page-mobile-report.JPG) | ![](readme-images/lighthouse/bag-page-mobile-report.JPG)
+
 ---
 ## User Stories Testing
 
